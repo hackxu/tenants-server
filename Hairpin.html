@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <title>发卡</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/own.js"></script>
+    <style>
+    </style>
+</head>
+<body class="login-bg">
+<div id="main">
+    <div class="status-bar">
+        <a href="###"><img src="images/b.png" alt=""></a>
+        <span>我要发卡</span>
+    </div>
+    <div class="hairpin-tab-list">
+        <ul>
+            <li class="hairpin-tab-list-active"><a href="###">发卡状态</a></li>
+            <li><a href="###">发行会员卡</a></li>
+            <li><a href="###">发行礼品卡</a></li>
+        </ul>
+    </div>
+    <div class="hairpin-tab-main">
+            <div class="own-shop-place hairpin-check ">
+                <ul>
+                    <li><span>卡种类</span><img src="images/10.png" alt="">
+                    </li>
+                    <li><span>卡状态</span><img src="images/10.png" alt="">
+                    </li>
+                    <li>
+                        <span>发卡日期:</span>
+                        <input type="text" readonly>
+                        <input type="date">
+                        <span>-</span>
+                        <input type="text" readonly>
+                        <input type="date">
+                    </li>
+                </ul>
+            </div>
+        <div class="my-vip-slide-down">
+            <dl>
+                <dd>全部卡</dd>
+                <dd>会员卡</dd>
+                <dd>礼品卡</dd>
+            </dl>
+            <dl>
+                <dd>男</dd>
+                <dd>女</dd>
+            </dl>
+        </div>
+
+        <div class="hairpin-classify-list">
+                <ul>
+                    <li><span>会员卡</span><b>待审核发布(新发卡)</b></li>
+                    <li><span>初始折扣：9.8折</span></li>
+                    <li><span>开通功能：积分、充值、折扣调整、优惠券</span><b>2016/1/7 14:20</b></li>
+                    <li><a href="###">停发</a><a href="###">详情</a></li>
+                </ul>
+            </div>
+            <div class="hairpin-classify-list">
+                <ul>
+                    <li><span>会员卡</span><b>待审核发布(信息更新)</b></li>
+                    <li><span>初始折扣：9.8折</span></li>
+                    <li><span>开通功能：积分、充值、折扣调整、优惠券</span><b>2016/1/7 14:20</b></li>
+                    <li><a href="###">停发</a><a href="###">详情</a></li>
+                </ul>
+            </div>
+            <div class="hairpin-classify-list">
+                <ul>
+                    <li><span>礼品卡</span><b>在用</b></li>
+                    <li><span>开通功能：积分、充值、折扣调整、优惠券</span><b>2016/1/7 14:20</b></li>
+                    <li><a href="###">停发</a><a href="###">详情</a><a href="###">修改</a></li>
+                </ul>
+            </div>
+            <div class="hairpin-classify-list">
+                <ul>
+                    <li><span>礼品卡</span><p>退回原因 <img src="images/go.png" alt=""></p><b>审核退回</b></li>
+                    <li><span>开通功能：积分、充值、折扣调整、优惠券</span><b>2016/1/7 14:20</b></li>
+                    <li><a href="###">停发</a><a href="###">详情</a><a href="###">修改</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="bg"></div>
+    <div class="login-alert own-contorl-alert hairpin-alert">
+        <div class="own-contorl-alert-p">
+            <p>手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认</p>
+        </div>
+        <div class="login-alet-check">
+            <span class="login-alet-check-canel">确&nbsp;&nbsp;认</span>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.hairpin-classify-list ul li p').click(function () {
+            $('.bg').show();
+            $('.hairpin-alert').show()
+        })
+    })
+</script>
+</body>
+</html>

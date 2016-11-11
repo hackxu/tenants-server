@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <title>我要发卡</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/own.js"></script>
+    <style>
+        /*.hairpin-gift-alert{ display: block;}*/
+    </style>
+</head>
+<body class="login-bg">
+<div id="main">
+    <div class="status-bar">
+        <a href="###"><img src="images/b.png" alt=""></a>
+        <span>会员卡修改</span>
+    </div>
+    <div class="hairpin-tab-main">
+            <div class="hairpin-gift hairpin-vip">
+                <ul>
+                    <li><span>会员折扣:</span><p>折</p><input type="number" id="tright" placeholder="(选填，不填则不提供普惠折扣)"></li>
+                </ul>
+                <div class="hairpin-vip-child hairpin-vip-child-one">
+                    <ul>
+                        <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>积分功能:</span></label></li>
+                        <li><span>每消费:</span><b>元获1积分</b><input type="number" placeholder="(请填入)"></li>
+                        <li><span>消费时每:</span><b>积分抵1元</b><input type="number" placeholder="(请填入)"></li>
+                        <li><span>生日积分倍数:</span><b>倍</b><input type="number" placeholder="(选填，不填则生日享日常积分)"></li>
+                        <li><span>积分清零时间:每年</span><b>月底</b><input type="number" placeholder="(选填，不填则积分不清零)"></li>
+                    </ul>
+
+                </div>
+                <div class="hairpin-vip-child hairpin-vip-child-two">
+                    <ul>
+                        <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>充值功能:</span></label></li>
+                        <li><span>单次最低充值额度：</span><input type="text" placeholder="(选填，不填则无最低额度)"></li>
+                    </ul>
+
+                </div>
+                <div class="hairpin-vip-child hairpin-vip-child-th">
+                    <ul>
+                        <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>折扣调整功能:</span></label></li>
+                        <li><span>单次最低充值额度：</span><a>(不填则折扣不随单次充值额度调整)</a>
+                            <div class="hairpin-vip-table">
+
+                                <div class="hairpin-vip-table-main">
+                                    <ul>
+                                        <li>
+                                            <div><p>单次充值额度超过</p><p>(元：请由低到高录入)</p></div>
+                                            <div><p>升级会员折扣至</p><p>(元：请由高到低设置)</p></div>
+                                        </li>
+                                        <li><input type="number" placeholder="请输入金额，例如：500"><input type="number" placeholder="请输入折扣，例如：9"></li>
+                                        <li><div class="add"><img src="images/+.png" alt=""></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><span>累计积分调整：</span><a>(不填则折扣不随累计积分调整)</a>
+                            <div class="hairpin-vip-table">
+
+                                <div class="hairpin-vip-table-main">
+                                    <ul>
+                                        <li>
+                                            <div><p>累计积分超过</p><p>(元：请由低到高录入)</p></div>
+                                            <div><p>升级会员折扣至</p><p>(元：请由高到低设置)</p></div>
+                                        </li>
+                                        <li><input type="number" placeholder="请输入金额，例如：500"><input type="number" placeholder="请输入折扣，例如：9"></li>
+                                        <li><div class="add"><img src="images/+.png" alt=""></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="hairpin-vip-child hairpin-vip-child-th">
+                    <ul>
+                        <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>优惠券功能</span></label></li>
+                    </ul>
+                    <button type="submit">提&nbsp;&nbsp;交</button>
+                </div>
+                <div class="hairpin-gift-suc">
+                    <p>您已经成功发卡，如需重新发卡，您需要将之前的卡停用后，点击启用，即可以重新发卡。</p>
+                </div>
+            </div>
+    </div>
+    <div class="bg"></div>
+    <div class="login-alert hairpin-gift-alert hairpin-gift-change-alert hairpin-vip-change-alert">
+        <p>您已修改了您的会员卡配置信息</p>
+        <p><b>特别提醒：</b>新会员将按新的规则享受权益；存量会员仍享受各人原消费折扣，但此后新发生的消费、充值等将遵循修能会引起存量会员投诉，请仔细检查您的新规则并慎重决定是否真的需要修改。</p>
+        <p>新会员将按新的规则享受权益；存量会员仍享受各人原消费折扣，但此后新发生的消费、充值等将遵循修改后的积分、充值、折扣调整规则，这可能会引起存量会员投诉，请仔细检查您的新规则并慎重决定是否真的需要修改。</p>
+        <div class="login-alet-check">
+            <span class="login-alet-check-canel">取&nbsp;&nbsp;消</span>
+            <span class="hairpin-vip-alet-check-again">确认修改</span>
+        </div>
+
+    </div>
+</div>
+<script>
+
+
+//    页面跳转流程 看后可删除
+    $('.hairpin-gift-alert .login-alet-check-again').click(function () {
+        $('.hairpin-gift ul').hide()
+        $('.hairpin-gift .hairpin-gift-suc').show();
+    });
+$(".hairpin-vip-change-alert .login-alet-check-again").click(function () {
+    $('.hairpin-vip-child').hide();
+})
+$('.hairpin-vip-alet-check-again').click(function () {
+    $(".hairpin-vip-change-alert").hide();
+    $('.bg').hide()
+})
+    $('.hairpin-gift button').click(function () {
+        $('.bg').show();
+        $('.hairpin-gift-alert').show();
+    })
+</script>
+</body>
+</html>

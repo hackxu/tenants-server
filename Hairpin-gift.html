@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <title>发卡</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/own.js"></script>
+    <style>
+    </style>
+</head>
+<body class="login-bg">
+<div id="main">
+    <div class="status-bar">
+        <a href="###"><img src="images/b.png" alt=""></a>
+        <span>我要发卡</span>
+    </div>
+    <div class="hairpin-tab-list">
+        <ul>
+            <li ><a href="###">发卡状态</a></li>
+            <li><a href="###">发行会员卡</a></li>
+            <li class="hairpin-tab-list-active"><a href="###">发行礼品卡</a></li>
+        </ul>
+    </div>
+    <div class="hairpin-tab-main">
+            <div class="hairpin-gift">
+                <ul>
+                    <li><span>有效期：</span></li>
+                    <li><label for=""><img src="images/8.png" alt=""><input type="radio" checked name="giftcheck"><span>自充值起:</span></label><b>个月</b><input type="number" placeholder="(请填入)"></li>
+                    <li><label for=""><img src="images/7.png" alt=""><input type="radio" name="giftcheck"><span>永久有效</span></label></li>
+                    <li><span>单次最低充值额度:</span><input type="number" placeholder="(选填，不填则充值时无最低额度要求)"></li>
+                    <button type="submit">提&nbsp;&nbsp;交</button>
+                </ul>
+                <div class="hairpin-gift-suc">
+                    <p>您已经成功发卡，如需重新发卡，您需要将之前的卡停用后，点击启用，即可以重新发卡。</p>
+                </div>
+            </div>
+    </div>
+    <div class="bg"></div>
+    <div class="login-alert hairpin-gift-alert">
+        <p>您已成功配置您的礼品卡信息，待审核通过后您的礼品卡就将发布在卡萌APP上，您可以在"我要发卡"页面中"发卡状态"查看审核结果。</p>
+        <div class="login-alet-check">
+            <span class="login-alet-check-canel">取&nbsp;&nbsp;消</span>
+            <span class="login-alet-check-again">确认修改</span>
+        </div>
+
+    </div>
+</div>
+<script>
+//    页面跳转流程 看后可删除
+    $('.hairpin-gift-alert .login-alet-check-again').click(function () {
+        $('.hairpin-gift ul').hide()
+        $('.hairpin-gift .hairpin-gift-suc').show();
+    })
+    $('.hairpin-gift button').click(function () {
+        $('.bg').show();
+        $('.hairpin-gift-alert').show();
+    })
+</script>
+</body>
+</html>
