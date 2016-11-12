@@ -90,7 +90,7 @@ $(function () {
     })
 
     // 重写选择框样式
-    $(".own-shop-all-check label input[type=checkbox],.own-shop-list label input[type=checkbox], .hairpin-vip-child ul li input[type=checkbox]").click(function () {
+    $(".own-shop-all-check label input[type=checkbox],.own-shop-list label input[type=checkbox], .hairpin-vip-child ul li input[type=checkbox],.Recharge-activities-add ul li input[type=checkbox]").click(function () {
         console.log($(this).prop("checked"));
         console.log($(this).prev("img"))
         if ($(this).prop("checked") == false) {
@@ -180,6 +180,36 @@ $(function () {
     $('.go-activities-change>p>b input').blur(function () {
         $('.go-activities-change>p>b').css("width","32%")
     });
+
+    // 新增充值活动日期选择和活动范围选择
+    $('.Recharge-activities-add ul li:eq(1) select').change(function () {
+        var $val = $(this).find("option:checked").text();
+        $('.Recharge-activities-add ul li:eq(1) b span').text($val)
+
+    })
+    $('.recharge-date input').change(function () {
+        var $val = $(this).val();
+        console.log($val);
+        $val = $val.replace("-","");
+        $val =$val.replace("-","")
+        $(this).prev("b").find("span").eq(1).text($val)
+    })
+
+    // 新增积分活动页面表格    
+    $('.store-add ').click(function () {
+        var $li = " <li><input type='number' placeholder='请输入积分,例如:500'> <div class='false-select'> <p>选择<img src='images/go.png' alt=''></p> <select name='' id=''> <option value=''>选择</option> <option value='1'>发送接口数据库房价降幅</option> </select> </div> <img class='store-table-reduce' src='images/02.png' alt=''> </li> "
+//        $('.hairpin-vip-table-main ul').prepend($($li))
+        $(this).parent().before($($li))
+    });
+    $(document).on("click",".store-table-reduce",function () {
+        $(this).parent().remove();
+    });
+
+    $(document).on("change",".store-table ul li select",function () {
+        var $text = $(this).find("option:selected").text();
+        console.log($text)
+        $(this).prev("p").html("<abbr>"+ $text+" <img src='images/go.png' alt=''></abbr>")
+    })
 
 })
 

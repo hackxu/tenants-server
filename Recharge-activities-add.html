@@ -10,29 +10,8 @@
     <link rel="stylesheet" href="css/css.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/rem.js"></script>
-    <script src="js/rem.js"></script>
+    <script src="js/own.js"></script>
     <style>
-        .Recharge-activities-add{ width:100%; background:#fff;height:auto; overflow: hidden; margin-top:.25rem;border: 1px solid #ddd9d3; border-left:none; border-right:none;}
-        .Recharge-activities-add ul li{ width:98%; float: right;border-bottom: 1px solid #e9e5e1; height:2.1rem;font-size: .7rem; line-height:2.1rem; overflow: hidden;}
-        .Recharge-activities-add ul li span{ float: left;}
-        .Recharge-activities-add ul li b{ float: right;}
-        .Recharge-activities-add ul li input{ float: right; height:100%;font-size: .6rem;border: none; margin-right:.5rem;}
-        .Recharge-activities-add ul li:first-child input{ width:66%;}
-        .Recharge-activities-add ul li b{ font-weight:300; color: #949494;}
-        .Recharge-activities-add ul li b span{ float: left;}
-        .Recharge-activities-add ul li:nth-child(2){ position: relative;}
-        .Recharge-activities-add ul li:nth-child(2) img{ width:.4rem; margin-top:.7rem; margin-left:.1rem; float: left;}
-        .Recharge-activities-add ul li:nth-child(2) input{ position: absolute; top:0; right:0; opacity:0;}
-        .Recharge-activities-add ul li:nth-child(2) b img{ float: right;}
-        .Recharge-activities-add ul li:nth-child(2) b{ margin-right:.5rem;}
-        .recharge-date b span:first-child{ color: #000; float: left;}
-        .recharge-date{ position: relative; overflow: hidden;}
-        .recharge-date{font-size: .5rem; width:31%; overflow: hidden; float: right;}
-        .recharge-date b span:nth-child(3){ margin-left:14%; float: right;}
-        .recharge-date b{ width:100%;}
-        .recharge-date b img{ width:.25rem; margin-top:.75rem;margin-left:.1rem; float: right;}
-        .Recharge-activities-add ul li .recharge-date:nth-child(2){ margin-right:.5rem; margin-left:1rem;}
-        /*.Recharge-activities-add ul li .recharge-date:nth-child(1) input{ position: absolute; top:0; right:0;}*/
     </style>
 </head>
 <body class="login-bg">
@@ -41,30 +20,83 @@
         <a href="###"><img src="images/b.png" alt=""></a>
         <span>新增充值活动</span>
     </div>
-    <div class="Recharge-activities-add">
+    <div class="recharge-activities-add-main">
+    <div class=" Recharge-activities-add ">
         <ul>
             <li><span>活动名称</span><input type="text" maxlength="18" placeholder="为您的活动起个响亮的名字，最多18字"></li>
-            <li><span>活动范围</span><b><img src="images/go.png" alt=""><span>选择</span></b><input type="date"></li>
+            <li><span>活动范围</span><b><img src="images/go.png" alt=""><span>选择</span></b><select name="" id="">
+                <option value="1">秦淮区点点滴滴</option>
+                <option value="1">秦淮区点点滴滴</option>
+            </select></li>
             <li>
                 <span>活动日期</span>
                 <div class="recharge-date">
                     <b><span>结束日期:</span><img src="images/go.png" alt=""><span>选择</span></b>
+                    <input type="date">
                 </div>
 
                 <div class="recharge-date">
                     <b><span>开始日期:</span><img src="images/go.png" alt=""><span>选择</span></b>
+                    <input type="date">
                 </div>
             </li>
+            <li><span>活动内容</span></li>
+            <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>充值送金额:</span></label>
+                <div class="hairpin-vip-table recharge-tab-main">
+
+                    <div class="hairpin-vip-table-main recharge-tab">
+                        <ul>
+                            <li>
+                                <div><p>单次充值额度超过</p><p>(元：请由低到高录入)</p></div>
+                                <div><p>赠送金额</p><p>(元：请由低到高设置)</p></div>
+                            </li>
+                            <li><input type="number" placeholder="请输入金额，例如：500"><input type="number" placeholder="请输入折扣，例如：9"></li>
+                            <li><div class="add"><img src="images/+.png" alt=""></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+            <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>充值送积分:</span></label>
+                <div class="hairpin-vip-table recharge-tab-main">
+
+                    <div class="hairpin-vip-table-main recharge-tab">
+                        <ul>
+                            <li>
+                                <div><p>单次充值额度超过</p><p>(元：请由低到高录入)</p></div>
+                                <div><p>赠送积分</p><p>(元：请由低到高设置)</p></div>
+                            </li>
+                            <li><input type="number" placeholder="请输入金额，例如：500"><input type="number" placeholder="请输入折扣，例如：9"></li>
+                            <li><div class="add"><img src="images/+.png" alt=""></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+            <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>充值享折扣:</span></label>
+                <div class="hairpin-vip-table recharge-tab-main">
+
+                    <div class="hairpin-vip-table-main recharge-tab">
+                        <ul>
+                            <li>
+                                <div><p>单次充值额度超过</p><p>(元：请由低到高录入)</p></div>
+                                <div><p>永久消费折扣</p><p>(元：请由高到低设置)</p></div>
+                            </li>
+                            <li><input type="number" placeholder="请输入金额，例如：500"><input type="number" placeholder="请输入折扣，例如：9"></li>
+                            <li><div class="add"><img src="images/+.png" alt=""></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
         </ul>
+    </div>
+        <button type="submit">提&nbsp;&nbsp;交</button>
     </div>
 </div>
 <script>
     $(function () {
-        $('.Recharge-activities-add ul li:eq(1) input').change(function () {
-            var $val = $(this).val();
-            $('.Recharge-activities-add ul li:eq(1) b').text($val)
 
-        })
     })
 </script>
 </body>

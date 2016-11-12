@@ -4,7 +4,10 @@ ul{ list-style-type:none;}
 body{font-family: "Microsoft YaHei";}
 a{text-decoration: none;}
 input{outline: none}
-
+::-webkit-input-placeholder { /* WebKit browsers */ color:#7d7d7d; }
+　　:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#7d7d7d; }
+　　::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#7d7d7d; }
+　　:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#7d7d7d; }
 #main{ max-width:640px; overflow: hidden;margin: 0 auto;}
 .status-bar { width: 100%; height: 2rem; overflow: hidden; background: #f5f1ec; position: relative; }
 .status-bar > a:first-child { display: block; width: 1.75rem; overflow: hidden; height: 2rem; position: absolute; left: 0; }
@@ -329,3 +332,65 @@ input{outline: none}
 .go-activities-gift-main-check ul li{ width:40%!important;}
 .go-activities-gift-main-check ul li img{ width:23.8% !important; margin-top:.1rem;}
 .go-activities-gift-add ul li{ float: none;margin: 0 auto; width:27%;}
+
+
+.Recharge-activities-add{ width:100%; background:#fff;height:auto; overflow: hidden; margin-top:.25rem;border: 1px solid #ddd9d3; border-left:none; border-right:none;}
+.Recharge-activities-add ul li{ position: relative; width:98%; float: right;border-bottom: 1px solid #e9e5e1; min-height:2.1rem;font-size: .7rem; line-height:2.1rem; overflow: hidden;}
+.Recharge-activities-add ul li span{ float: left;}
+.Recharge-activities-add ul li b{ float: right;}
+.Recharge-activities-add ul li input{ float: right; height:100%;font-size: .6rem;border: none; margin-right:.5rem;}
+.Recharge-activities-add ul li:first-child input{ width:66%;}
+.Recharge-activities-add ul li b{ font-weight:300; color: #949494;}
+.Recharge-activities-add ul li b span{ float: left;}
+.Recharge-activities-add .recharge-date b p span{ float: right;}
+.Recharge-activities-add ul li:nth-child(1) input{ height:2.1rem;}
+.Recharge-activities-add ul li:nth-child(2){ position: relative;}
+.Recharge-activities-add ul li:nth-child(2) img{ width:.4rem; margin-top:.7rem; margin-left:.1rem; float: left;}
+.Recharge-activities-add>ul>li:nth-child(2) select{ position: absolute; top:0; right:0; opacity:0;}
+.Recharge-activities-add ul li:nth-child(2) b img{ float: right;}
+.Recharge-activities-add ul li:nth-child(2) b{ margin-right:.5rem;}
+.recharge-date b span:first-child{ color: #000; float: left;}
+.recharge-date{ position: relative; overflow: hidden;}
+.recharge-date{font-size: .5rem; width:35%; overflow: hidden; float: right;}
+.recharge-date b span:nth-child(3){ float: right;}
+.recharge-date b{ width:100%;}
+.recharge-date b img{ width:.25rem; margin-top:.75rem;margin-left:.1rem; float: right;}
+.recharge-date input{ position: absolute; top:0; left:0;opacity:0;}
+.Recharge-activities-add ul li .recharge-date:nth-child(3){ float: left; margin-left:.5rem;}
+.Recharge-activities-add ul li .recharge-date:nth-child(2){ margin-right:.5rem; float: right;}
+/*.Recharge-activities-add ul li .recharge-date:nth-child(1) input{ position: absolute; top:0; right:0;}*/
+/*.Recharge-activities-add ul li:nth-child(5) label{ width:100%; height:auto; overflow: hidden; display: block; position: relative;}*/
+.Recharge-activities-add ul li label img{ float: left;width: .875rem; margin-top:.6rem; margin-right:.2rem;}
+.Recharge-activities-add ul li label span{ float: left;}
+.Recharge-activities-add ul li label input{ position: absolute; top:0.2rem; left:0; width:1rem; height:1.75rem; opacity:0;}
+.recharge-tab{ margin-left:3px;border: none; margin-top:2px; }
+.recharge-tab-main{ margin-bottom:1rem;}
+.recharge-tab ul li:first-child{border-top: 1px solid #949494}
+.recharge-tab ul li{border-left: 1px solid #949494;border-right: 1px solid #949494; }
+.recharge-tab ul li:last-child{border-bottom: 1px solid #949494}
+.recharge-tab ul >li{border-top: 1px solid #949494;border-bottom: none; position: relative; width:100%; min-height:1.25rem!important; display: block; overflow: visible;}
+/*.recharge-tab ul li:first-child{border-top: none;}*/
+.recharge-tab ul li input{ width:49.5%;border-right: 1px solid #949494; float: left; height:1.25rem; margin-right:0;font-size: .6rem;text-align: center;}
+.recharge-tab ul li input:nth-child(2){border-right: none;}
+.recharge-activities-add-main button{ width:35%; height:1.7rem; overflow: hidden;border: none;background: #e85c53;border-radius: 5px; color: #f5f1ec;font-size:.7rem;margin: 1rem auto 2rem auto; display: block; }
+
+.store-activities-add>ul>li>input{ height:2.1rem; width:50%;}
+.recharge-activities-add-main .store-activities-add .false-select img{ margin-top:.35rem; width:.3rem;}
+.store-tab ul li select{ position: absolute; right:0; top:0; width:49.5%; height:1.25rem; opacity:0;}
+.store-common-table{ width:93%; float: right; overflow: hidden;}
+.store-table{ width:87%; height:auto; }
+.store-table ul li{border:1px solid #949494; border-top:none; position: relative; overflow: visible;}
+.store-table ul li:first-child{ border-top:1px solid #949494; min-height:1.75rem; line-height:1.75rem;}
+.store-table ul li:first-child b{ width:49.5%; float: left;border-right: 1px solid #949494;text-align: center; color: #000;font-size: .6rem}
+.store-table ul li:first-child b:last-child{border: none;}
+.store-table ul li{ line-height:1.25rem;min-height: 1.25rem}
+.store-activities-add  .store-table ul li input{ width:49.5%; border-right:1px solid #949494; float: left; height:1.25rem; margin-right:0;text-align: center}
+.false-select{ width:49.5%; height:1.25rem; overflow: hidden; color: #7d7d7d;font-size: .6rem; float: left;}
+.false-select span{ margin-left:41.6%; margin-top:-.35rem;}
+.store-table>ul>li>img{ width:0.75rem;margin: .25rem auto}
+#main .store-table-reduce{ position: absolute; top:0.25rem; right:-1.2rem; width:.75rem; margin-top:0;}
+.false-select p{text-align: center}
+#main .false-select p img{ /*position: absolute; top:-0.03rem; right:17%;*/ display: inline-block; float: none; margin-top:.1rem; border-top:.1rem solid #fff; width:.2rem;}
+.false-select select{ width:49.5%; height:100%; position: absolute; top:0; right:0; opacity:0;}
+.false-select abbr{font-size: .45rem; height:1.25rem; line-height:.5rem; display: block; margin-top:.1rem;}
+.store-common-table{ margin-bottom:1rem;}
