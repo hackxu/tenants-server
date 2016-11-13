@@ -392,5 +392,32 @@ input{outline: none}
 .false-select p{text-align: center}
 #main .false-select p img{ /*position: absolute; top:-0.03rem; right:17%;*/ display: inline-block; float: none; margin-top:.1rem; border-top:.1rem solid #fff; width:.2rem;}
 .false-select select{ width:49.5%; height:100%; position: absolute; top:0; right:0; opacity:0;}
-.false-select abbr{font-size: .45rem; height:1.25rem; line-height:.5rem; display: block; margin-top:.1rem;}
+.false-select abbr{font-size: .4rem; height:1.25rem; line-height:.5rem; display: block; margin-top:.1rem;}
 .store-common-table{ margin-bottom:1rem;}
+
+.coupon-table-main{ width:100%; height:auto; overflow: hidden;  float: left;margin: .6rem 0}
+.coupon-table{ width:88.75%;}
+.coupon-table ul li:first-child{ border-top:1px solid #949494; min-height:2rem;}
+.coupon-table ul li {border: 1px solid #949494; border-top: none; position: relative;}
+/*.coupon-table-left{ width:35%; float: left; }*/
+.coupon-table-left ,.coupon-table-center{ width:35%;border-right: 1px solid #949494; float: left;}
+.coupon-table-left p,.coupon-table-center p{height: .7rem; margin-top:-.25rem;}
+.coupon-table-main .coupon-table-left span,.coupon-table-main .coupon-table-center span{ font-size: .45rem;text-align: center; float: none}
+.coupon-table ul li:first-child div{font-size: .6rem;text-align: center; height:2rem;}
+.coupon-table-main  .coupon-table ul li>input{ float: left; width:35%; border-right:1px solid #949494; margin-right:0; height:1.25rem;font-size: .45rem;text-align: center}
+.coupon-select{ float: right; width:29%; height:1.25rem;}
+.coupon-table-main .coupon-table ul li{ min-height:1.25rem; overflow: visible;}
+.coupon-table-main .coupon-select p{ height:1.25rem; line-height:1.25rem;font-size: .45rem}
+.coupon-table-main .coupon-select select{ height:1.25rem; line-height:1.25rem; width:29%;}
+.coupon-add{ width:.9rem;margin: .175rem auto;}
+.coupon-date input{ position: absolute; top:0; right:0; opacity:0;}
+.coupon-date img{ float: right;width: .4rem; margin-top: .7rem; margin-left: .1rem; margin-right:.5rem;}
+.coupon-activities-add>ul>li:nth-last-child(2) input{ width:58%;font-size: .5rem}
+.coupon-activities-add .store-common-table { margin: .55rem 0}
+.setting-coupon{ width:100%; height:auto; overflow: hidden; margin-top:.25rem;background:#fff;border-top: 1px solid #ddd9d3;border-bottom: 1px solid #ddd9d3}
+.setting-coupon ul li{ width:98%; height:auto; overflow: hidden; height:2.1rem;border-bottom: 1px solid #e9e5e1; float: right;font-size: .7rem;background: #fff; line-height:2.1rem;}
+.setting-coupon ul li input{ float: right; width:40%; height:100%;border: none}
+.setting-coupon-main{ display: none;}
+
+.gift-activities-add>ul>li:last-child >input{ width:50%;font-size: .5rem; height:2.1rem;}
+.gift-activities-add>ul>li:last-child{border-bottom: none}

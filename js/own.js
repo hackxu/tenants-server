@@ -111,7 +111,7 @@ $(function () {
 
     // 发行会员卡页面js
     $('.add ').click(function () {
-        var $li = "<li><input type='number' placeholder='请输入金额，例如：500'><input type='number' placeholder='请输入折扣，例如：9'><img class='reduce' src='images/02.png' alt=''></li> "
+        var $li = "<li><input type='number' placeholder='请输入金额，例如：500'><input type='number' placeholder='请输入数值，例如：9'><img class='reduce' src='images/02.png' alt=''></li> "
 //        $('.hairpin-vip-table-main ul').prepend($($li))
         $(this).parent().before($($li))
     });
@@ -196,7 +196,7 @@ $(function () {
     })
 
     // 新增积分活动页面表格    
-    $('.store-add ').click(function () {
+    $('.store-add-t ').click(function () {
         var $li = " <li><input type='number' placeholder='请输入积分,例如:500'> <div class='false-select'> <p>选择<img src='images/go.png' alt=''></p> <select name='' id=''> <option value=''>选择</option> <option value='1'>发送接口数据库房价降幅</option> </select> </div> <img class='store-table-reduce' src='images/02.png' alt=''> </li> "
 //        $('.hairpin-vip-table-main ul').prepend($($li))
         $(this).parent().before($($li))
@@ -205,12 +205,30 @@ $(function () {
         $(this).parent().remove();
     });
 
-    $(document).on("change",".store-table ul li select",function () {
+    $(document).on("change",".store-table-t ul li select,.coupon-table ul li select",function () {
         var $text = $(this).find("option:selected").text();
         console.log($text)
         $(this).prev("p").html("<abbr>"+ $text+" <img src='images/go.png' alt=''></abbr>")
     })
+    // 新增赠券页面表格
 
+    $('.coupon-add').click(function () {
+        var $li = "<li><input type='number' placeholder='请输入金额,例如:500'><input type='number' placeholder='请输入金额,例如:10'> <div class='false-select coupon-select'> <p>设置 <img src='images/go.png' alt=''></p> </div> <img src='images/02.png' class='store-table-reduce' alt=''> </li>"
+        $(this).parent().before($($li))
+
+    })
+
+    $('.coupon-date input').change(function () {
+        var $val = $(this).val();
+        $(this).prev("b").find("span").text($val)
+    })
+
+    // 新增直接送券表格
+    $('.coupon-add-t ').click(function () {
+        var $li = " <li><input type='number' placeholder='请输入金额,例如:10'> <div class='false-select'> <p>设置<img src='images/go.png' alt=''></p>  </div> <img class='store-table-reduce' src='images/02.png' alt=''> </li> "
+//        $('.hairpin-vip-table-main ul').prepend($($li))
+        $(this).parent().before($($li))
+    });
 })
 
 

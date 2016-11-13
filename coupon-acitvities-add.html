@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <title>新增赠券活动</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/own.js"></script>
+    <style>
+    </style>
+</head>
+<body class="login-bg">
+<div id="main">
+
+    <div class="status-bar">
+        <a href="###"><img src="images/b.png" alt=""></a>
+        <span>新增赠券活动</span>
+    </div>
+    <div class="recharge-activities-add-main coupon-activities-add-main">
+        <div class=" Recharge-activities-add store-activities-add coupon-activities-add">
+            <ul>
+                <li><span>活动名称</span><input type="text" maxlength="18" placeholder="为您的活动起个响亮的名字，最多18字"></li>
+                <li><span>活动范围</span><b><img src="images/go.png" alt=""><span>选择</span></b><select name="" id="">
+                    <option value="1">秦淮区点点滴滴</option>
+                    <option value="1">秦淮区点点滴滴</option>
+                </select></li>
+                <li><span>活动内容</span></li>
+                <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>消费送券:</span></label></li>
+                <li>
+                    <span>活动日期</span>
+                    <div class="recharge-date">
+                        <b><span>结束日期:</span><img src="images/go.png" alt=""><span>选择</span></b>
+                        <input type="date">
+                    </div>
+
+                    <div class="recharge-date">
+                        <b><span>开始日期:</span><img src="images/go.png" alt=""><span>选择</span></b>
+                        <input type="date">
+                    </div>
+                </li>
+                <!--<li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>消费获多倍积分:</span></label><input-->
+                        <!--type="number" placeholder="请输入每消费1元获积分个数"></li>-->
+                <!--<li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>充值送金额:</span></label></li>-->
+                <li>
+                    <div class="coupon-table-main">
+                        <div class="coupon-table">
+                            <ul>
+                                <li>
+                                    <div class="coupon-table-left">
+                                        <p>单次消费金额超过</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-center">
+                                        <p>赠送抵用券金额</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-right">
+                                        抵用券信息
+                                    </div>
+                                </li>
+                                <li><input type="number" placeholder="请输入金额,例如:500"><input type="number" placeholder="请输入金额,例如:10">
+                                <div class="false-select coupon-select">
+                                    <p>设置 <img src="images/go.png" alt=""></p>
+
+                                </div>
+                                </li>
+                                <li><img src="images/+.png" class="coupon-add" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>积分送券:</span></label></li>
+                <li class="coupon-date"><span>送券日期</span><b><img src="images/go.png" alt=""><span>选择</span></b><input type="date"></li>
+                <li>
+                    <div class="coupon-table-main">
+                        <div class="coupon-table">
+                            <ul>
+                                <li>
+                                    <div class="coupon-table-left">
+                                        <p>累计积分超过</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-center">
+                                        <p>赠送抵用券金额</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-right">
+                                        抵用券信息
+                                    </div>
+                                </li>
+                                <li><input type="number" placeholder="请输入金额,例如:500"><input type="number" placeholder="请输入金额,例如:10">
+                                    <div class="false-select coupon-select">
+                                        <p>设置 <img src="images/go.png" alt=""></p>
+
+                                    </div>
+                                </li>
+                                <li><img src="images/+.png" class="coupon-add" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>直接送券:</span></label></li>
+                <li class="coupon-date"><span>送券日期</span><b><img src="images/go.png" alt=""><span>选择</span></b><input type="date"></li>
+                <li><span>随机赠送会员数</span><input type="number" placeholder="您当前会员总数510，请输入赠券会员数"></li>
+                <li>
+                    <div class="store-common-table">
+                        <div class="store-table">
+                            <ul>
+                                <li><b>赠送抵用券金额</b><b>抵用券信息</b></li>
+                                <li><input type="number" placeholder="请输入金额,例如:10">
+                                    <div class="false-select">
+                                        <p>设置<img src="images/go.png" alt=""></p>
+
+                                    </div>
+                                    <!--<img class="store-table-reduce" src="images/02.png" alt="">-->
+                                </li>
+                                <li><img class="store-add coupon-add-t" src="images/+.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--此为抵用券信息设置-->
+        <div class="setting-coupon-main">
+            <div class=" setting-coupon">
+                <ul>
+                    <li><span>抵用券使用需消费金额</span><input type="number" placeholder="请输入消费满金额"></li>
+                    <li><span>有效期天数</span><input type="number" placeholder="请输入天数"></li>
+                </ul>
+            </div>
+            <button type="button">提&nbsp;&nbsp;交</button>
+        </div>
+        <!--到此为止-->
+        <button type="submit">提&nbsp;&nbsp;交</button>
+
+    </div>
+</div>
+<script>
+
+    $(document).on("click",".coupon-select p",function () {
+        $(".setting-coupon input").val("")
+        $('.coupon-activities-add').hide();
+        $('.coupon-activities-add-main>button').hide();
+        $('.setting-coupon-main').show();
+        $(this).addClass("p-active")
+
+    })
+//    此处为跳转逻辑，不知道后端会怎么写。可以将html中注释的抵用券信息设置div单独提取出去作为一个页面，还有下面的直接送券里的设置跟上面的两个送券是一样流程
+    $('.setting-coupon-main button').click(function () {
+        var $oneval = $('.setting-coupon li:eq(0) input').val();
+        var $twoval = $('.setting-coupon li:eq(1) input').val();
+        if($oneval == ""){
+            return;
+        }else if($twoval == ""){
+            return;
+        }else{
+            var $li = "抵用券使用需消费金额"+$oneval+"有效期天数"+$twoval;
+            $(".p-active").html("<abbr>"+ $li+" <img src='images/go.png' alt=''></abbr>")
+            $('.coupon-activities-add').show();
+            $('.coupon-activities-add-main>button').show();
+            $('.setting-coupon-main').hide();
+            $(".p-active").removeClass()
+
+        }
+    })
+</script>
+</body>
+</html>
