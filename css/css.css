@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;-webkit-tap-highlight-color:transparent;}
 img{ display: block;border: none}
 ul{ list-style-type:none;}
-body{font-family: "Microsoft YaHei";}
+body{font-family: "Microsoft YaHei";background: #e9e5e1}
 a{text-decoration: none;}
 input{outline: none;background: none}
 ::-webkit-input-placeholder { /* WebKit browsers */ color:#7d7d7d; }
@@ -36,7 +36,7 @@ input{outline: none;background: none}
 #login-btn { width:33%; float: left; height:1.5rem;border-radius: 5px; color: #ffffff;background: #ee4239;text-align: center; display: block;font-size: .7rem; padding-right:0;margin-top:.25rem;}
 .first-login-top ul button{ margin-top:3.3rem;}
 
-.bg{ width:100%;  overflow: hidden;background: rgba(0,0,0,0.3); position: fixed; top:0; left:0; height:100%; z-index:3; display: none;}
+.bg{ width:100%;  overflow: hidden;background: rgba(0,0,0,0.3); position: fixed; top:0; left:0; height:100%; z-index:1; display: none;}
 .login-alert{ width:82%;background: #fff; height:auto; overflow: hidden; position: fixed; top:50%; left:50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index:4; display: none;}
 .login-alert p{text-align: center;font-size: .7rem;padding: 2rem 0}
 .login-alert .login-alet-check{ width:91%; height:auto; overflow: hidden;margin: 0 auto; border-top:1px solid #ddd9d3;}
@@ -105,7 +105,7 @@ input{outline: none;background: none}
 .own-contorl h3 a img { float: right; width: .35rem; margin-top: .1rem; -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 .own-contorl h3 span { float: left; }
 
-.Membership-card-index-list{ width:100%; height:auto; overflow: hidden; margin-top:.25rem;background: #fff; border-top:1px solid #e9e5e1; border-bottom:1px solid #e9e5e1;}
+.Membership-card-index-list{ width:100%; height:auto; overflow: hidden; margin-top:.25rem;background: #f5f1ec; border-top:1px solid #e9e5e1; border-bottom:1px solid #e9e5e1;}
 .Membership-card-index-list ul li{border-bottom: 1px solid #e9e5e1; width:96%; margin-left:4%; overflow: hidden;padding: .75rem 0}
 .Membership-card-index-list ul li:last-child{ border-bottom:none;}
 .Membership-card-index-list ul li a{ display: block; overflow: hidden;}
@@ -180,7 +180,7 @@ input{outline: none;background: none}
 .own-contorl-alert .login-alet-check span:last-child { border: none; color: #ef3e4e; margin: 0 auto; }
 .own-contorl-alert .own-contorl-alert-p{ min-height:4.25rem;}
 .own-contorl-alert .own-contorl-alert-p p{line-height:.9rem;text-align: left; width:95%;margin: 1rem auto;padding: 0;}
-.own-contorl-alert { display: block; }
+/*.own-contorl-alert { display: block; }*/
 .own-contorl-alert .login-alet-check{ border-top:none;}
 .own-contorl-alert  .own-contorl-alert-p p{text-align: center;}
 
@@ -449,3 +449,12 @@ input{outline: none;background: none}
 
 .coupon-activities-change>ul>li b{ color: #000;}
 .coupon-table-main{ padding-top:2px;}
+
+.shop-user-manager-add ul li{ width:36%;}
+.shop-user-manager-add-input>p>b{ width:49%;}
+.shop-user-manager-add-input>p>b input{width:70%}
+.shop-user-manager-check ul li{ width:100%!important;}
+.shop-user-manager-check ul{ width:23%;}
+.shop-user-manager-slide-down{ top:7.25rem;}
+.shop-user-manager-right .activities-list-right-top span:first-child{ color: #000;}
+.shop-user-manager-right .activities-list li a{letter-spacing: 0!important;padding: 0!important;}
