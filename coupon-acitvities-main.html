@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <title>赠券活动详情</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/own.js"></script>
+    <style>
+        .coupon-activities-main>ul>li:first-child b,.coupon-mr b{ margin-right:.5rem;}
+        .coupon-activities-main ul li abbr{ color: #000;}
+    </style>
+</head>
+<body class="login-bg">
+<div id="main">
+
+    <div class="status-bar">
+        <a href="###"><img src="images/b.png" alt=""></a>
+        <span>赠券活动详情</span>
+    </div>
+    <div class="recharge-activities-add-main coupon-activities-add-main">
+        <div class=" Recharge-activities-add store-activities-add coupon-activities-add coupon-activities-change coupon-activities-main" >
+            <ul>
+                <li><span>活动名称</span><b>庆五一消费就送金额</b></li>
+                <li><span>活动范围</span><b><img src="images/go.png" alt=""><span>集团</span></b></li>
+                <li><span>活动内容</span></li>
+                <li><label for=""><span>消费送券:</span></label></li>
+                <li>
+                    <span>活动日期</span>
+                    <div class="recharge-date">
+                        <b><span>结束日期:</span><img src="images/go.png" alt=""><span>20160510</span></b>
+                        <input type="date">
+                    </div>
+
+                    <div class="recharge-date">
+                        <b><span>开始日期:</span><img src="images/go.png" alt=""><span>20160501</span></b>
+                        <input type="date">
+                    </div>
+                </li>
+                <!--<li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>消费获多倍积分:</span></label><input-->
+                        <!--type="number" placeholder="请输入每消费1元获积分个数"></li>-->
+                <!--<li><label for=""><img src="images/7.png" alt=""><input type="checkbox" ><span>充值送金额:</span></label></li>-->
+                <li>
+                    <div class="coupon-table-main">
+                        <div class="coupon-table">
+                            <ul>
+                                <li>
+                                    <div class="coupon-table-left">
+                                        <p>单次消费金额超过</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-center">
+                                        <p>赠送抵用券金额</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-right">
+                                        抵用券信息
+                                    </div>
+                                </li>
+                                <li><input type="number" readonly value="500" placeholder="请输入金额,例如:500"><input type="number" readonly value="10" placeholder="请输入金额,例如:10">
+                                <div class="false-select coupon-select">
+                                    <p><abbr>抵用券使用需消费金额1有效期天数1<img src="images/go.png" alt=""></abbr> <img src="images/go.png" alt=""></p>
+
+                                </div>
+                                </li>
+                                <!--<li><img src="images/+.png" class="coupon-add" alt=""></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><label for=""><span>积分送券:</span></label></li>
+                <li class="coupon-date"><span>送券日期</span><b><img src="images/go.png" alt=""><span>2016-09-09</span></b></li>
+                <li>
+                    <div class="coupon-table-main">
+                        <div class="coupon-table">
+                            <ul>
+                                <li>
+                                    <div class="coupon-table-left">
+                                        <p>单次消费金额超过</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-center">
+                                        <p>赠送抵用券金额</p>
+                                        <span>(元:请由低到高录入)</span>
+                                    </div>
+                                    <div class="coupon-table-right">
+                                        抵用券信息
+                                    </div>
+                                </li>
+                                <li><input type="number" readonly value="500" placeholder="请输入金额,例如:500"><input type="number" readonly value="10" placeholder="请输入金额,例如:10">
+                                    <div class="false-select coupon-select">
+                                        <p><abbr>抵用券使用需消费金额1有效期天数1<img src="images/go.png" alt=""></abbr> <img src="images/go.png" alt=""></p>
+
+                                    </div>
+                                </li>
+                                <!--<li><img src="images/+.png" class="coupon-add" alt=""></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><label for=""><span>直接送券:</span></label></li>
+                <li class="coupon-date"><span>送券日期</span><b><img src="images/go.png" alt=""><span>2016-09-09</span></b></li>
+                <li class="coupon-mr"><span>随机赠送会员数</span><b>500</b></li>
+                <li>
+                    <div class="store-common-table">
+                        <div class="store-table">
+                            <ul>
+                                <li><b>赠送抵用券金额</b><b>抵用券信息</b></li>
+                                <li><input type="number" value="10" readonly placeholder="请输入金额,例如:10">
+                                    <div class="false-select">
+                                        <p><abbr title="">赠送抵用券金额<img src="images/go.png" alt=""></abbr></p>
+
+                                    </div>
+                                    <!--<img class="store-table-reduce" src="images/02.png" alt="">-->
+                                </li>
+                                <!--<li><img class="store-add coupon-add-t" src="images/+.png" alt=""></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<script>
+
+
+</script>
+</body>
+</html>

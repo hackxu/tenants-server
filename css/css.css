@@ -3,7 +3,7 @@ img{ display: block;border: none}
 ul{ list-style-type:none;}
 body{font-family: "Microsoft YaHei";}
 a{text-decoration: none;}
-input{outline: none}
+input{outline: none;background: none}
 ::-webkit-input-placeholder { /* WebKit browsers */ color:#7d7d7d; }
 　　:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#7d7d7d; }
 　　::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#7d7d7d; }
@@ -36,8 +36,8 @@ input{outline: none}
 #login-btn { width:33%; float: left; height:1.5rem;border-radius: 5px; color: #ffffff;background: #ee4239;text-align: center; display: block;font-size: .7rem; padding-right:0;margin-top:.25rem;}
 .first-login-top ul button{ margin-top:3.3rem;}
 
-.bg{ width:100%;  overflow: hidden;background: rgba(0,0,0,0.3); position: fixed; top:0; left:0; height:100%; z-index:1; display: none;}
-.login-alert{ width:82%;background: #fff; height:auto; overflow: hidden; position: fixed; top:50%; left:50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index:2; display: none;}
+.bg{ width:100%;  overflow: hidden;background: rgba(0,0,0,0.3); position: fixed; top:0; left:0; height:100%; z-index:3; display: none;}
+.login-alert{ width:82%;background: #fff; height:auto; overflow: hidden; position: fixed; top:50%; left:50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index:4; display: none;}
 .login-alert p{text-align: center;font-size: .7rem;padding: 2rem 0}
 .login-alert .login-alet-check{ width:91%; height:auto; overflow: hidden;margin: 0 auto; border-top:1px solid #ddd9d3;}
 .login-alert .login-alet-check span{ display: block; float: left; width:49%; height:1.5rem;margin: .25rem 0;font-size: .7rem;text-align: center; line-height:1.5rem;}
@@ -177,9 +177,12 @@ input{outline: none}
 .hairpin-gift-suc p{ width:84%;font-size: .7rem; line-height:.9rem; position: absolute; top:50%; left:50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .own-contorl-alert .login-alet-check span { float: none; }
-.own-contorl-alert .login-alet-check span:last-child { border: none; color: #000; margin: 0 auto; }
+.own-contorl-alert .login-alet-check span:last-child { border: none; color: #ef3e4e; margin: 0 auto; }
 .own-contorl-alert .own-contorl-alert-p{ min-height:4.25rem;}
 .own-contorl-alert .own-contorl-alert-p p{line-height:.9rem;text-align: left; width:95%;margin: 1rem auto;padding: 0;}
+.own-contorl-alert { display: block; }
+.own-contorl-alert .login-alet-check{ border-top:none;}
+.own-contorl-alert  .own-contorl-alert-p p{text-align: center;}
 
 
 .hairpin-vip>ul li:first-child { border-bottom:1px solid #ddd9d3;}
@@ -343,7 +346,7 @@ input{outline: none}
 .Recharge-activities-add ul li b{ font-weight:300; color: #949494;}
 .Recharge-activities-add ul li b span{ float: left;}
 .Recharge-activities-add .recharge-date b p span{ float: right;}
-.Recharge-activities-add ul li:nth-child(1) input{ height:2.1rem;}
+.Recharge-activities-add ul li:nth-child(1) input{ height:2.1rem;text-align: right;font-size: .6rem}
 .Recharge-activities-add ul li:nth-child(2){ position: relative;}
 .Recharge-activities-add ul li:nth-child(2) img{ width:.4rem; margin-top:.7rem; margin-left:.1rem; float: left;}
 .Recharge-activities-add>ul>li:nth-child(2) select{ position: absolute; top:0; right:0; opacity:0;}
@@ -403,7 +406,7 @@ input{outline: none}
 .coupon-table-left ,.coupon-table-center{ width:35%;border-right: 1px solid #949494; float: left;}
 .coupon-table-left p,.coupon-table-center p{height: .7rem; margin-top:-.25rem;}
 .coupon-table-main .coupon-table-left span,.coupon-table-main .coupon-table-center span{ font-size: .45rem;text-align: center; float: none}
-.coupon-table ul li:first-child div{font-size: .6rem;text-align: center; height:2rem;}
+.coupon-table ul li:first-child div{font-size: .55rem;text-align: center; height:2rem;}
 .coupon-table-main  .coupon-table ul li>input{ float: left; width:35%; border-right:1px solid #949494; margin-right:0; height:1.25rem;font-size: .45rem;text-align: center}
 .coupon-select{ float: right; width:29%; height:1.25rem;}
 .coupon-table-main .coupon-table ul li{ min-height:1.25rem; overflow: visible;}
@@ -421,3 +424,28 @@ input{outline: none}
 
 .gift-activities-add>ul>li:last-child >input{ width:50%;font-size: .5rem; height:2.1rem;}
 .gift-activities-add>ul>li:last-child{border-bottom: none}
+
+.sale-activities-main{background: #f5f1ec;}
+.sale-activities-main ul li b{ color: #000;}
+.sale-activities-main ul li>b{ margin-right:.5rem;}
+
+.sale-activities-add ul li:last-child b input{ width:3rem; float: none;text-align: center; margin: 0 .2rem;}
+
+.sale-activities-add ul li:last-child b{ margin-right:.5rem;}
+
+.sale-activities-change ul li b{ color: #000;}
+
+.Recharge-activities-change ul li b{ color: #000;}
+
+.Recharge-activities-change>ul>li:first-child b{ margin-right:.5rem;}
+
+.store-activities-add ul li input{ text-align: right}
+.store-activities-change ul li b{ color: #000;}
+
+.store-activities-main>ul>li b{ margin-right:.5rem;}
+.store-activities-main>ul>li:nth-child(3) b{ margin-right:0;}
+.store-activities-main .store-table b{ margin-right:0;}
+.store-activities-main .store-table abbr{ color: #000;}
+
+.coupon-activities-change>ul>li b{ color: #000;}
+.coupon-table-main{ padding-top:2px;}
