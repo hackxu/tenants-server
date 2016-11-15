@@ -455,6 +455,60 @@ input{outline: none;background: none}
 .shop-user-manager-add-input>p>b input{width:70%}
 .shop-user-manager-check ul li{ width:100%!important;}
 .shop-user-manager-check ul{ width:23%;}
-.shop-user-manager-slide-down{ top:7.25rem;}
+.shop-user-manager-slide-down{ top:7.85rem;}
 .shop-user-manager-right .activities-list-right-top span:first-child{ color: #000;}
 .shop-user-manager-right .activities-list li a{letter-spacing: 0!important;padding: 0!important;}
+
+
+.authority-main{ width:100%; height:auto; overflow: hidden;}
+.authority-main-list{ width:100%; height:auto; overflow: hidden;background: #f5f1ec;}
+.authority-main-list h3{ width:95%; background: #e9e5e1; font-weight:300;padding: .3rem 0;padding-left:6%;}
+.authority-main-list h3 span{ border-left:3px solid #e85c53; padding:.1rem 0;padding-left:.2rem;font-size: .6rem; line-height:.8rem;}
+.authority-main-list ul{ width:100%; height:auto; overflow: hidden;border: 1px solid #ddd9d3;}
+.authority-main-list ul li{ width:95%; padding-left:3%; float: right;border-bottom: 1px solid #e9e5e1;font-size: .7rem; line-height:1.65rem;}
+.authority-main-list ul li:last-child{border-bottom: none;}
+
+.shop-user-manager-add{ width:100%; height:auto; overflow: hidden;background: none}
+.shop-user-manager-add ul li{ width:95%; float: right; padding-left:3%;font-size: .7rem; height:2rem; line-height:2rem;}
+.shop-user-manager-add ul { width:100%; height:auto; overflow: hidden; margin-top:.25rem;background: #f5f1ec;border: 1px solid #ddd9d3; border-left:none; border-right:none;background: #f5f1ec}
+.shop-user-manager-add ul li{border-bottom: 1px solid #e9e5e1; position: relative;}
+.shop-user-manager-add ul li input{ width:46%; height:100%; float: right;border: none;font-size:.7rem;text-align: right; margin-right:.5rem;}
+.shop-user-manager-add ul li:nth-child(2){background: #e9e5e1; width:95% ;padding-left:5%; color: #343434;font-size: .5rem}
+.shop-user-manager-add ul li:nth-child(2) a{ color: #e85c53;}
+.shop-user-manager-add ul li b{ float: right; width:60%; height:100%; margin-right:.5rem;}
+.shop-user-manager-add ul li b span{ float: right; font-weight:300; margin-right:.4rem; color: #7d7d7d;}
+.shop-user-manager-add ul li b img{ width:.4rem; margin-top:.6rem; margin-left:.4rem; float: right;}
+.shop-user-manager-add ul li select{ width:50%; position: absolute; top:0; right:0; height:2rem; opacity:0;}
+.shop-user-manager-add ul li:last-child{border-bottom: none;}
+.shop-user-manager-add button{ width:35%;height: 1.5rem;border: none;background: #e85c53; color: #ffffff;font-size: .7rem;margin: 2rem auto; display: block;}
+
+.shop-user-manager-add-psword{ width:100%; overflow: hidden;background: #f5f1ec; margin-top:.25rem; }
+.shop-user-manager-add-psword p{font-size: .7rem;text-align: center;}
+.shop-user-manager-add-psword p:first-child{ margin-top:1.5rem; margin-bottom:.9rem;}
+.shop-user-manager-add-psword p input{ width:77.5%; height:2rem;border: 1px solid #e9e5e1;background: #fff;font-size: .7rem;text-align: center;}
+.shop-user-manager-add-psword button{ width:48%; height:1.5rem;background: #e85c53;border: none;font-size: .7rem; display: block;margin: 4rem auto 6rem auto; color: #fff;border-radius: 5px}
+
+.shop-user-manager-add-suc{ width:100%; height:auto; overflow: hidden;}
+.shop-user-manager-add-suc-top{ width:100%; height:auto; overflow: hidden;}
+.shop-user-manager-add-suc-top img{ width:18%;margin: 1.1rem auto .5rem auto;}
+.shop-user-manager-add-suc-top p{font-size: .7rem;text-align: center; margin-bottom:1rem;}
+.shop-user-manager-add-suc-center{ width:100%; overflow: hidden;background: #f5f1ec;border: 1px solid #ddd9d3;}
+.shop-user-manager-add-suc-center ul li{ width:95%; padding-left:3%; float: right; height:2.1rem; line-height:2.1rem;border-bottom: 1px solid #e9e5e1;font-size: .7rem;}
+.shop-user-manager-add-suc-center ul li b{ float: right; font-weight:300; margin-right:.5rem;}
+.shop-user-manager-add-suc-bottom{ width:100%; height:auto; overflow: hidden;}
+.shop-user-manager-add-suc-bottom p{margin: 1rem auto 3rem auto; width:85%;font-size: .7rem}
+.shop-user-manager-add-suc-bottom p b{ color: #e85c53; font-weight:300;}
+.shop-user-manager-add-suc a{ width:47%; height:1.5rem; color: #fff;text-align:center; line-height:1.5rem;font-size: .7rem;background: #e85c53;border: none;border-radius: 5px; display: block;margin: 0 auto 3rem auto;}
+
+.shop-user-manager-add-fail a{ margin-top:5rem;}
+
+.shop-user-manager-add-change ul li b span{ color: #000; }
+
+.shop-user-manager-add-authority ul li b{ float: right; width:1rem; overflow: hidden; margin-right:.5rem; position: relative;}
+.shop-user-manager-add-authority ul li b img{ width:100%; margin-top:.3rem;}
+.shop-user-manager-add-authority ul li b input{ position: absolute; top:0; left:0; width:1rem; height:1rem; opacity:0; margin-top:.3rem;}
+.shop-user-manager-add-authority-button { width:100%; height:auto; overflow: hidden;background: #e9e5e1;}
+.shop-user-manager-add-authority-button button{ width:35%; height:1.5rem;font-size: .7rem; color: #fff;background: #e85c53;border: none;border-radius: 5px; display: block;margin: 2rem auto}
+
+.shop-user-alert-p{padding: 1rem 0}
+.shop-user-alert p{padding: .2rem;text-align: left; line-height:.9rem;}

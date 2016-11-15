@@ -90,7 +90,7 @@ $(function () {
     })
 
     // 重写选择框样式
-    $(".own-shop-all-check label input[type=checkbox],.own-shop-list label input[type=checkbox], .hairpin-vip-child ul li input[type=checkbox],.Recharge-activities-add ul li input[type=checkbox]").click(function () {
+    $(".own-shop-all-check label input[type=checkbox],.own-shop-list label input[type=checkbox], .hairpin-vip-child ul li input[type=checkbox],.Recharge-activities-add ul li input[type=checkbox] ,.shop-user-manager-add-authority ul li input[type=checkbox]").click(function () {
         console.log($(this).prop("checked"));
         console.log($(this).prev("img"))
         if ($(this).prop("checked") == false) {
@@ -242,6 +242,14 @@ $(function () {
     $('.own-contorl-alert .login-alet-check-canel').click(function () {
         $('.bg').css("z-index","1")
     })
+
+    // 新增门店操作员选择所属门店
+    $('.shop-user-manager-add select').change(function () {
+        var $text = $(this).find("option:selected").text();
+        $(this).prev('b').find("span").text($text)
+        $(this).prev('b').find("span").css("color","#000")
+    })
+
 })
 
 

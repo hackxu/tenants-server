@@ -12,6 +12,9 @@
     <script src="js/own.js"></script>
     <link rel="stylesheet" href="css/css.css">
     <style>
+        .shop-user-manager ul li{ width:33%; float: none; padding-left:0;}
+        .shop-user-manager ul li span{ margin-top:0;}
+        .shop-user-manager ul li img{ margin-top:.6rem;}
     </style>
 </head>
 <body class="login-bg">
@@ -20,7 +23,7 @@
         <a href="###"><img src="images/b.png" alt=""></a>
         <span>门店操作员管理</span>
     </div>
-    <div class="goactivities-main-add go-activities-gift-add shop-user-manager-add">
+    <div class="goactivities-main-add go-activities-gift-add shop-user-manager-add shop-user-manager">
         <ul>
             <li><a href="###"><img src="images/red+.png" alt=""><span>新增门店操作员</span></a></li>
         </ul>
@@ -49,34 +52,72 @@
             <ul>
                 <li><p>手机号：18251886363</p><div class="activities-list-right"><div class="activities-list-right-top"><span>姓名：周一请</span></div></div></li>
                 <li><span>所属门店：华仔三山街店</span><b>状态:在用</b></li>
-                <li><a href="###">修&nbsp;改</a><a href="###">删&nbsp;除</a><a href="###">禁&nbsp;用</a><a href="###">重置密码</a><a href="###">权限详情</a></li>
+                <li><a href="###" class="shop-user-manager-change">修&nbsp;改</a><a href="###" class="shop-user-manager-remove">删&nbsp;除</a><a href="###" class="shop-user-manager-disable">禁&nbsp;用</a><a href="###" class="shop-user-manager-reset">重置密码</a><a href="###" class="shop-user-manager-authority">权限详情</a></li>
             </ul>
         </div>
         <div class="activities-list ">
             <ul>
                 <li><p>手机号：18251886363</p><div class="activities-list-right"><div class="activities-list-right-top"><span>姓名：周一请</span></div></div></li>
                 <li><span>所属门店：华仔三山街店</span><b>状态:在用</b></li>
-                <li><a href="###">修&nbsp;改</a><a href="###">删&nbsp;除</a><a href="###">禁&nbsp;用</a><a href="###">重置密码</a><a href="###">权限详情</a></li>
+                <li><a href="###" class="shop-user-manager-change">修&nbsp;改</a><a href="###" class="shop-user-manager-remove">删&nbsp;除</a><a href="###" class="shop-user-manager-disable">禁&nbsp;用</a><a href="###" class="shop-user-manager-reset">重置密码</a><a href="###" class="shop-user-manager-authority">权限详情</a></li>
             </ul>
         </div>
         <div class="activities-list ">
             <ul>
                 <li><p>手机号：18251886363</p><div class="activities-list-right"><div class="activities-list-right-top"><span>姓名：周一请</span></div></div></li>
                 <li><span>所属门店：华仔三山街店</span><b>状态:在用</b></li>
-                <li><a href="###">修&nbsp;改</a><a href="###">删&nbsp;除</a><a href="###">禁&nbsp;用</a><a href="###">重置密码</a><a href="###">权限详情</a></li>
+                <li><a href="###" class="shop-user-manager-change">修&nbsp;改</a><a href="###" class="shop-user-manager-remove">删&nbsp;除</a><a href="###" class="shop-user-manager-disable">禁&nbsp;用</a><a href="###" class="shop-user-manager-reset">重置密码</a><a href="###" class="shop-user-manager-authority">权限详情</a></li>
             </ul>
         </div>
         <div class="activities-list ">
             <ul>
                 <li><p>手机号：18251886363</p><div class="activities-list-right"><div class="activities-list-right-top"><span>姓名：周一请</span></div></div></li>
                 <li><span>所属门店：华仔三山街店</span><b>状态:在用</b></li>
-                <li><a href="###">修&nbsp;改</a><a href="###">删&nbsp;除</a><a href="###">禁&nbsp;用</a><a href="###">重置密码</a><a href="###">权限详情</a></li>
+                <li><a href="###" class="shop-user-manager-change">修&nbsp;改</a><a href="###" class="shop-user-manager-remove">删&nbsp;除</a><a href="###" class="shop-user-manager-disable">禁&nbsp;用</a><a href="###" class="shop-user-manager-reset">重置密码</a><a href="###" class="shop-user-manager-authority">权限详情</a></li>
             </ul>
         </div>
+        <div class="activities-list ">
+            <ul>
+                <li><p>手机号：18251886363</p><div class="activities-list-right"><div class="activities-list-right-top"><span>姓名：周一请</span></div></div></li>
+                <li><span>所属门店：华仔三山街店</span><b>状态:在用</b></li>
+                <li><a href="###" class="shop-user-manager-change">修&nbsp;改</a><a href="###" class="shop-user-manager-remove">删&nbsp;除</a><a href="###" class="shop-user-manager-disable">禁&nbsp;用</a><a href="###" class="shop-user-manager-reset">重置密码</a><a href="###" class="shop-user-manager-authority">权限详情</a></li>
+            </ul>
+        </div>
+
     </div>
 
-    <div class="bg">
+    <div class="bg"></div>
+    <div class="login-alert shop-user-manager-alert-disale">
+        <p>您确定要禁用该用户吗？禁用后该用户不再允许对本系统进行任何操作。</p>
+        <div class="login-alet-check">
+            <span class="login-alet-check-canel">取&nbsp;&nbsp;消</span>
+            <span class="login-alet-check-again">确认禁用</span>
+        </div>
+    </div>
+    <div class="login-alert shop-user-manager-alert-remove">
+        <p>您确定要删除该用户吗？删除后该用户将不存在，其原先的操作记录仍然保存。</p>
+        <div class="login-alet-check">
+            <span class="login-alet-check-canel">取&nbsp;&nbsp;消</span>
+            <span class="login-alet-check-again">确认删除</span>
+        </div>
+    </div>
+    <div class="login-alert shop-user-manager-alert-able">
+        <p>您确定要禁用该用户吗？禁用后该用户不再允许对本系统进行任何操作。</p>
+        <div class="login-alet-check">
+            <span class="login-alet-check-canel">取&nbsp;&nbsp;消</span>
+            <span class="login-alet-check-again">确认启用</span>
+        </div>
     </div>
 </div>
+<!--注意此处点删除启用 禁用都需要进入操作密码洁面-->
 </body>
+<script>
+    $(function () {
+        $(document).on('.shop-user-manager-disable',"click",function () {
+            $('.bg').show();
+            $('.bg').css("z-index","3")  //调整背景层层级
+            $('.shop-user-manager-alert-disale').show();
+        })
+    })
+</script>
 </html>
