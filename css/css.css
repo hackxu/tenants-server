@@ -246,7 +246,7 @@ input{outline: none;background: none}
 .hairpin-vip-child-th ul li:first-child { height:1.75rem;}
 
 
-.activities-main{ width:100%; height:auto; overflow: hidden;}
+.activities-main{ width:100%; height:auto; overflow: hidden; margin-bottom:1rem;}
 .activities-list{ width:100%; height:auto; overflow: hidden;border:1px solid #ddd9d3; border-left:none; border-right:none; background: #fff; margin-bottom:.2rem;}
 .activities-list ul li:first-child p{font-size: .7rem; color: #000; float: left; width:56%; height:auto; margin-top:.3rem;}
 .activities-list ul li{font-size: .5rem; color: #464646; overflow: hidden; width:95%;margin: 0 auto;}
@@ -512,3 +512,50 @@ input{outline: none;background: none}
 
 .shop-user-alert-p{padding: 1rem 0}
 .shop-user-alert p{padding: .2rem;text-align: left; line-height:.9rem;}
+
+.shop-user-manager ul li{ width:33%; float: none; padding-left:0;}
+.shop-user-manager ul li span{ margin-top:0;}
+.shop-user-manager ul li img{ margin-top:.6rem;}
+
+.shop-user-manager ul{ margin-top:0;border-top: none}
+
+.coupon-activities-main>ul>li:first-child b,.coupon-mr b{ margin-right:.5rem;}
+.coupon-activities-main ul li abbr{ color: #000;}
+
+#main .Pay-record-tab-list ul li:first-child a{ width:2.8rem;}
+#main .Pay-record-tab-list ul li:nth-child(2) a{ width:4.2rem;}
+.pay-record-check ul{ width:100%;}
+.pay-record-check ul li{ width:22%!important; margin-right:.5rem;}
+.pay-record-check ul li span{text-align: center;}
+.pay-record-check ul li img{ width:20%!important;}
+.pay-record-slide-down{ top:5.35rem;}
+.pay-record-main h3{ width:100%; height:1.25rem; line-height:1.25rem; font-weight:300;}
+.pay-record-main h3 span{ margin-left:.5rem; margin-right:1.5rem;font-size: .6rem}
+.pay-record-main .activities-list-right-top span:first-child{ color: #e85c53;}
+.pay-record-main .activities-list ul li{border: none;padding: 0; line-height:1rem;}
+.pay-record-main .activities-list ul li b{ float: right;}
+.pay-record-main .activities-list ul li a{border: none; display: inline-block;margin: 0;font-size: .6rem}
+.pay-record-main .activities-list ul li b img{ width:.3rem; float: right; margin-top:.25rem;}
+.pay-record-main .activities-list ul li:last-child{ line-height:1rem;}
+
+.pay-record-change p b input{ width:82%;}
+.pay-record-change p b{ width:61%;}
+.two-horse{ width:100%; height:1.75rem;background: #f5f1ec; overflow: hidden;border: 1px solid #ddd9d3; border-left:none; border-right:none;}
+.two-horse p{ width:52%;margin: 0 auto; overflow: hidden;}
+.two-horse p img{ width:.9rem; float: left; margin-right:.1rem;}
+.two-horse p a{ font-size: .6rem; float: left; line-height:.9rem; color: #e85c53; margin-top:.425rem;}
+
+.pay-record-main{ width:100%; overflow: hidden;margin: 0 auto;}
+.pay-record-main-list{ width:100%;height: auto; overflow: hidden;background: #f5f1ec; margin-top:.45rem;border: 1px solid #ddd9d3; border-left:none; border-right:none;}
+.pay-record-main-list ul{ overflow: hidden;}
+.pay-record-main-list ul li{ width:95%; float: right; padding-left:3%;border-bottom: 1px solid #e9e5e1; overflow: hidden; height:1.625rem;font-size: .7rem; line-height:1.625rem;}
+.pay-record-main-list ul li span{ float: left;}
+.pay-record-main-list ul li b{ float: right; margin-right:.5rem; font-weight:300;}
+.pay-record-main-list ul li:last-child{border-bottom: none}
+.pay-record-main-list ul li p{ overflow: hidden; margin-left:1.2rem; width:78%; float: left;}
+.pay-record-main-list h3{ width:100%; height:1.5rem;background: #e9e5e1; line-height:1.6rem;}
+.pay-record-main-list h3 span{ border-left:3px solid #e85c53;padding: .1rem 0; padding-left:.1rem;}
+.pay-record-main{ margin-bottom:1rem;}
+
+.card-pay-record h3{height: auto; overflow: hidden;}
+.card-pay-record h3 span{ display: block; line-height:1rem;}

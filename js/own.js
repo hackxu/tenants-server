@@ -183,6 +183,9 @@ $(function () {
     $('.shop-user-manager-add-input>p>b input').blur(function () {
         $('.go-activities-change>p>b').css("width","50%")
     });
+    $('.pay-record-change>p>b input').blur(function () {
+        $('.go-activities-change>p>b').css("width","61%")
+    });
 
     // 新增充值活动日期选择和活动范围选择
     $('.Recharge-activities-add ul li:eq(1) select').change(function () {
