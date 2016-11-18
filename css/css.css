@@ -590,3 +590,40 @@ input{outline: none;background: none}
 .gift-exchange-list-c>ul>li:nth-child(2){font-size: .7rem; margin-top:.1rem;}
 .gift-red{ color: #e85c53;}
 .gift-exchange-list-c-slide-down{ top:13.7rem;}
+
+.gift-inventory-adjustment{ width:100%; height:1.7rem;background: #f5f1ec;border: 1px solid #ddd9d3; border-left:none; border-right:none; overflow: hidden;}
+.gift-inventory-adjustment span{font-size: .7rem; float: left; margin-left:3%; line-height:1.7rem;}
+.gift-inventory-adjustment img{ float: right; margin-right:.5rem; width:.4rem; margin-top:.45rem;}
+.gift-inventory-adjustment-slide-down{ top:8.85rem;}
+.gift-inventory-adjustment-main{ width:100%; height:auto; overflow: hidden;}
+.gift-inventory-adjustment-main-list{ width:100%; height:auto; overflow: hidden;background: #f5f1ec;border: 1px solid #ddd9d3; border-left:none; border-right:none; margin-top:.25rem;}
+.gift-inventory-adjustment-main-list ul li{ width:97%; float: right; height:1.25rem; line-height:1.25rem; overflow: hidden;}
+.gift-inventory-adjustment-main-list ul li:first-child>span{font-size: .7rem}
+.gift-inventory-adjustment-main-list ul li:first-child b{ float: right; margin-right:.5rem;font-size: .7rem; font-weight:300;}
+.gift-inventory-adjustment-main-list ul li:first-child a{ color: #e85c53;}
+.gift-inventory-adjustment-main-list ul li span{ float: left; color: #494949;}
+.gift-inventory-adjustment-main-list ul li b{ float: right; margin-right:.5rem;font-size: .7rem; font-weight:300;}
+.gift-inventory-adjustment-main-list ul li:nth-child(2){border-bottom: 1px solid #e9e5e1}
+.gift-inventory-adjustment-main-list ul li:last-child{ height:1.5rem;}
+.gift-inventory-adjustment-main-list ul li>a{ width:2.5rem;border: 1px solid #7d7d7d; height:1rem;border-radius: 5px; display: block; line-height:1rem;text-align: center; color: #000; float: right; margin: .2rem 0;margin-right:.5rem;}
+
+.gift-inverntory-adjustment-check{ width:100%; height:auto; overflow: hidden;}
+.gift-inverntory-adjustment-check ul li{ width:100%; height:2.1rem; line-height:2.1rem; overflow: hidden; position: relative;background: #fff;border: 1px solid #ddd9d3; border-left:none; border-right:none; margin-top:.25rem;}
+.gift-inverntory-adjustment-check ul li>span{ float: left; margin-left:.5rem;font-size: .7rem}
+.gift-inverntory-adjustment-check ul li b{ float: right; margin-right:.5rem;}
+.gift-inverntory-adjustment-check ul li input{ float: right; margin-right:.5rem; width:61%; height:100%;text-align: right;font-size: .7rem;border: none}
+.gift-inverntory-adjustment-check ul li b>span{ float: right; margin-right:.2rem;font-size: .7rem; font-weight:300;}
+.gift-inverntory-adjustment-check ul li b> img{ float: right; width:.5rem; margin-top:.5rem;}
+.gift-inverntory-adjustment-check a,.gift-inverntory-adjustment-check button{ border:none;font-size:.7rem;width:47%; height:1.5rem; display: block;background: #e85c53; color: #fff;text-align: center; line-height:1.5rem;border-radius: 5px;margin: 3.5rem auto;}
+.gift-inverntory-adjustment-check ul li select{ width:50%; position: absolute; top:0; right:0; height:100%; opacity:0;}
+
+.gift-exchange-list-password{ margin-top:0;}
+
+.gift-inverntory-adjustment-check-shop{ width:100%; height:auto; overflow: hidden;background: #fff;border: 1px solid #ddd9d3; border-left:none; border-right:none;}
+.gift-inverntory-adjustment-check-shop ul li{ width:97%; float: right;border-bottom: 1px solid #e9e5e1; line-height:2.1rem;}
+.gift-inverntory-adjustment-check-shop ul li span{ float: left;font-size: .7rem}
+.gift-inverntory-adjustment-check-shop ul li:last-child{border-bottom: none}
+.gift-inverntory-adjustment-check-shop ul li img{ float: right; width:.6rem; margin-top:.8rem; margin-right:.5rem; display: none;}
+
+.gift-inverntory-adjustment-check-final ul li{background: #f5f1ec}
+.gift-inverntory-adjustment-check-final ul li:last-child{background: #fff;}
