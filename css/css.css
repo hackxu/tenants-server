@@ -570,3 +570,23 @@ input{outline: none;background: none}
 .gift-exchange-input>ul>li:last-child{border-bottom:none;}
 .gift-exchange-input a{ width:47%; height:1.5rem;text-align: center; line-height:1.5rem; color: #ffffff;font-size: .7rem; display: block;background: #e85c53;border-radius: 5px;margin: 2rem auto;}
 .gift-exchange-input>ul>li b{ float: right; margin-right:.5rem;}
+
+.gift-exchange-steps>ul>li{ width:90%; float: right; margin-right:.5rem; overflow: hidden; height:1.2rem; line-height:1.2rem;}
+.gift-exchange-steps>ul>li:first-child span{font-size: .6rem}
+.gift-exchange-steps>ul>li>span{ float: left; font-size: .7rem}
+.gift-exchange-steps>ul>li>p{ float: right;font-size: .7rem}
+.gift-exchange-steps>ul>li>p>b{ color: #e85c53;}
+.gift-exchange-steps button{ width:47%; height:1.5rem;border-radius: 5px;background: #e85c53;font-size: .7rem; color: #ffffff;border: none; display: block;margin: .2rem auto;}
+.gift-exchange-list-c{ width:100%; height:auto; overflow: hidden;background: #f5f1ec;border: 1px solid #ddd9d3; border-left:none; border-right:none; margin-top:.25rem;}
+.gift-exchange-list-c>ul>li:first-child{border-bottom: 1px solid #e9e5e1; line-height:1.5rem;}
+.gift-exchange-list-c>ul>li:first-child label{ float: left; overflow: hidden; position: relative;font-size: .7rem}
+.gift-exchange-list-c>ul>li:first-child label img{ width:.75rem; float: left; margin-top:.35rem; margin-right:.2rem;}
+.gift-exchange-list-c>ul>li:first-child label input{ width:.75rem; height:.75rem; position: absolute;top: .35rem; left:0; opacity:0;}
+.gift-exchange-list-c>ul>li{ width:97%; float: right; overflow: hidden;  line-height:1rem;}
+.gift-exchange-list-c>ul>li b{ float: right; overflow: hidden; font-weight:300; margin-right:.5rem;}
+.gift-exchange-list-c>ul>li:first-child img{ float: right; width:.85rem; margin-top:.3rem;}
+.gift-exchange-list-c>ul>li:first-child span{ float: right;font-size: .7rem;margin: 0 .15rem}
+.gift-exchange-list-c>ul>li:last-child { color: #464646;}
+.gift-exchange-list-c>ul>li:nth-child(2){font-size: .7rem; margin-top:.1rem;}
+.gift-red{ color: #e85c53;}
+.gift-exchange-list-c-slide-down{ top:13.7rem;}

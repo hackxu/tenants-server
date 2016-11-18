@@ -12,24 +12,6 @@
     <script src="js/rem.js"></script>
     <script src="js/own.js"></script>
     <style>
-        .gift-exchange-steps>ul>li{ width:90%; float: right; margin-right:.5rem; overflow: hidden; height:1.2rem; line-height:1.2rem;}
-        .gift-exchange-steps>ul>li:first-child span{font-size: .6rem}
-        .gift-exchange-steps>ul>li>span{ float: left; font-size: .7rem}
-        .gift-exchange-steps>ul>li>p{ float: right;font-size: .7rem}
-        .gift-exchange-steps>ul>li>p>b{ color: #e85c53;}
-        .gift-exchange-steps button{ width:47%; height:1.5rem;border-radius: 5px;background: #e85c53;font-size: .7rem; color: #ffffff;border: none; display: block;margin: .2rem auto;}
-        .gift-exchange-list-c{ width:100%; height:auto; overflow: hidden;background: #f5f1ec;border: 1px solid #ddd9d3; border-left:none; border-right:none; margin-top:.25rem;}
-        .gift-exchange-list-c>ul>li:first-child{border-bottom: 1px solid #e9e5e1; line-height:1.5rem;}
-        .gift-exchange-list-c>ul>li:first-child label{ float: left; overflow: hidden; position: relative;font-size: .7rem}
-        .gift-exchange-list-c>ul>li:first-child label img{ width:.75rem; float: left; margin-top:.35rem; margin-right:.2rem;}
-        .gift-exchange-list-c>ul>li:first-child label input{ width:.75rem; height:.75rem; position: absolute;top: .35rem; left:0; opacity:0;}
-        .gift-exchange-list-c>ul>li{ width:97%; float: right; overflow: hidden;  line-height:1rem;}
-        .gift-exchange-list-c>ul>li b{ float: right; overflow: hidden; font-weight:300; margin-right:.5rem;}
-        .gift-exchange-list-c>ul>li:first-child img{ float: right; width:.85rem; margin-top:.3rem;}
-        .gift-exchange-list-c>ul>li:first-child span{ float: right;font-size: .7rem;margin: 0 .15rem}
-        .gift-exchange-list-c>ul>li:last-child { color: #464646;}
-        .gift-exchange-list-c>ul>li:nth-child(2){font-size: .7rem; margin-top:.1rem;}
-        .gift-red{ color: #e85c53;}
     </style>
 </head>
 <body>
@@ -65,7 +47,7 @@
                 </li>
             </ul>
         </div>
-        <div class="my-vip-slide-down go-activities-slide-down shop-user-manager-slide-down">
+        <div class="my-vip-slide-down go-activities-slide-down shop-user-manager-slide-down gift-exchange-list-c-slide-down">
 
             <dl>
                 <dd>华仔xxx</dd>
@@ -88,7 +70,7 @@
             <ul>
                 <li data-index="2"><label for=""><img src="images/7.png" alt=""><input type="checkbox">001：小玩具</label><b><img  src="images/jia2.png" alt=""><span>0份</span><img
                         src="images/jian2.png"  alt=""></b></li>
-                <li><b>100积分/份</b></li>
+                <li><b>180积分/份</b></li>
                 <li><span>所属门店:华仔美发三山街店</span><b>剩余数量:30</b></li>
             </ul>
         </div>
@@ -97,29 +79,51 @@
 </div>
 <script>
     $(function () {
-        var wtop = $("#shop-place").offset().top;
-        console.log(wtop)
-
+//        console.log(wtop)
+        var $ownstore = $('.gift-exchange-steps ul li:last-child').find("span").text();
         var ownstore = $('.gift-exchange-steps ul li:last-child').find("span").text();
         $('.gift-exchange-list-c ul li label input[type=checkbox]').click(function () {
-            var $index= $(this).parent().parent().attr('data-index');
             var $name = $(this).parent().text().substring(4);
+            var $index= $(this).parent().parent().attr("data-index");
+            var $giftnumberstring = $(this).parent().next().find("span").text();
+            var $giftnumber =$giftnumberstring.substring(0,$giftnumberstring.length -1);
+            var $storestring = $(this).parent().parent().next().find("b").text();
+            var $storenumber = $storestring.substring(0,$storestring.length - 4);
 
             if ($(this).prop("checked") == false) {
                 $(this).prev("img").attr("src", "images/7.png")
                 $(this).parent().next().removeClass("gift-red")
                 $(this).parent().next().find("img:first-child").removeClass("gift-add").attr("src","images/jia2.png");
                 $(this).parent().next().find("img:last-child").removeClass("gift-reduce").attr("src","images/jian2.png")
+                var wtop = $("#shop-place").offset().top;
+                $(".gift-exchange-steps ul li").each(function () {
+                    var $indexval = $(this).attr("data-index");
 
+                    if($index == $indexval){
+                        $(this).remove();
+                        $ownstore = parseInt($(this).find("b").text())+$ownstore;
+                        $('.gift-exchange-steps ul li:last-child').find("span").text($ownstore)
+                        var wtop = parseInt($("#shop-place").offset().top);
+                        var wheight = parseInt($('#shop-place').height());
+                        $('.shop-user-manager-slide-down').css("top",wtop+wheight)
+
+                    }
+                })
             } else {
                 $(this).prev("img").attr("src", "images/8.png");
                 $(this).parent().next().addClass("gift-red");
                 $(this).parent().next().find("img:first-child").addClass("gift-add").attr("src","images/jia1.png");
                 $(this).parent().next().find("img:last-child").addClass("gift-reduce").attr("src","images/jian1.png");
-                var $li = "<li data-index='"+ $index+"'><span>"+ $name +"X<a>0</a></span><p>所需积分:<b>0</b></p></li>"
+                var $li = "<li data-index='"+ $index+"'><span>"+ $name +"X<a>"+ $giftnumber+"</a></span><p>所需积分:<b>"+ $storenumber*$giftnumber+"</b></p></li>"
 
                     $('.gift-add-list').remove();
-                    $('.gift-exchange-steps li:last-child').before($li)
+                    $('.gift-exchange-steps li:last-child').before($li);
+                $ownstore = parseInt($ownstore)-parseInt($storenumber)*$giftnumber;
+                $('.gift-exchange-steps ul li:last-child').find("span").text($ownstore)
+
+                var wtop = parseInt($("#shop-place").offset().top);
+                var wheight = parseInt($('#shop-place').height());
+                $('.shop-user-manager-slide-down').css("top",wtop+wheight)
 
             }
         });
@@ -131,7 +135,7 @@
             var $giftnumber =$giftnumberstring.substring(0,$giftnumberstring.length -1);
             var $storestring = $(this).parent().parent().next().find("b").text();
             var $storenumber = $storestring.substring(0,$storestring.length - 4);
-            var $ownstore = $('.gift-exchange-steps ul li:last-child').find("span").text();
+//             $ownstore = $('.gift-exchange-steps ul li:last-child').find("span").text();
 
             if($ownstore <$storenumber){
                     console.log("积分不足")
@@ -146,7 +150,8 @@
                         if($index == $indexval){
                             $(this).find("a").text(parseInt($giftnumber)+1);
                             $(this).find("b").text((parseInt($giftnumber)+1)*$storenumber);
-                            $('.gift-exchange-steps ul li:last-child').find("span").text(parseInt($ownstore)-$storenumber)
+                            $ownstore = parseInt($ownstore)-parseInt($storenumber);
+                            $('.gift-exchange-steps ul li:last-child').find("span").text($ownstore)
 
                         }
                     })
@@ -160,7 +165,7 @@
             var $giftnumber =$giftnumberstring.substring(0,$giftnumberstring.length -1);
             var $storestring = $(this).parent().parent().next().find("b").text();
             var $storenumber = $storestring.substring(0,$storestring.length - 4);
-            var $ownstore = $('.gift-exchange-steps ul li:last-child').find("span").text();
+//             $ownstore = $('.gift-exchange-steps ul li:last-child').find("span").text();
             var $index= $(this).parent().parent().attr("data-index");
 
 //            if($ownstore < $storenumber){
@@ -176,7 +181,8 @@
                         if($index == $indexval){
                             $(this).find("a").text(parseInt($giftnumber)-1);
                             $(this).find("b").text((parseInt($giftnumber)-1)*$storenumber);
-                            $('.gift-exchange-steps ul li:last-child').find("span").text(parseInt($ownstore)+ parseInt($storenumber))
+                            $ownstore =parseInt($ownstore)+ parseInt($storenumber)
+                            $('.gift-exchange-steps ul li:last-child').find("span").text($ownstore)
 
                         }
                     })
