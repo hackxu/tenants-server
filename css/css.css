@@ -317,7 +317,7 @@ input{outline: none;background: none}
 
 .go-activities-main-tab-list{background: #e9e5e1;}
 .go-activities-main-tab-list ul li{ width:50%;}
-#main .go-activities-main-tab-list ul li a{ width:3.8rem;}
+#main .go-activities-main-tab-list ul li a{ width:3.8rem;text-align: center;}
 .goactivities-main-add { width:100%; height:auto; overflow: hidden;background: #f5f1ec;border: 1px solid #ddd9d3; border-left:none; border-right:none;}
 .goactivities-main-add ul{ width:91%; height:auto; overflow: hidden; display: block;margin: 0 auto;}
 .goactivities-main-add ul li{ float: left; overflow: hidden; height:1.75rem; width:25%;}
@@ -559,3 +559,14 @@ input{outline: none;background: none}
 
 .card-pay-record h3{height: auto; overflow: hidden;}
 .card-pay-record h3 span{ display: block; line-height:1rem;}
+
+.gift-exchange-steps{ width:100%; height:auto; overflow: hidden;}
+.gift-exchange-steps h3{ margin-left:5%; line-height:1.25rem; font-weight: 300; overflow: hidden; margin-top:.1rem;}
+.gift-exchange-steps h3 span{ border-left:3px solid #e85c53;padding: .1rem 0; line-height:.9rem;font-size: .7rem; padding-left:.3rem;}
+.gift-exchange-input-change>p>b{ width:45%;}
+.gift-exchange-input >ul{ overflow: hidden;border: 1px solid #ddd9d3; border-left:none; border-right:none;background: #f5f1ec;}
+.gift-exchange-input>ul>li{ width:95%; padding-left:3%; float: right;border-bottom: 1px solid #e9e5e1; height:1.675rem; line-height:1.675rem;font-size: .7rem;}
+.gift-exchange-input>ul>li input{ height:100%; width:70%;font-size: .7rem;border: none; float: right; margin-right:.5rem;text-align: right;}
+.gift-exchange-input>ul>li:last-child{border-bottom:none;}
+.gift-exchange-input a{ width:47%; height:1.5rem;text-align: center; line-height:1.5rem; color: #ffffff;font-size: .7rem; display: block;background: #e85c53;border-radius: 5px;margin: 2rem auto;}
+.gift-exchange-input>ul>li b{ float: right; margin-right:.5rem;}
