@@ -189,6 +189,12 @@ $(function () {
     $('.gift-exchange-input-change>p>b input').blur(function () {
         $('.gift-exchange-input-change>p>b').css("width","45%")
     });
+    $('.card-rechargea-change>p>b input').blur(function () {
+        $('.card-rechargea-change>p>b').css("width","46%")
+    });
+    $('.pay-money p>b input').blur(function () {
+        $('.pay-money-change>p>b').css("width","57%")
+    });
 
     // 新增充值活动日期选择和活动范围选择
     $('.Recharge-activities-add ul li:eq(1) select').change(function () {
@@ -256,6 +262,66 @@ $(function () {
         $(this).prev('b').find("span").css("color","#000")
     })
 
+    // 会员卡礼品卡充值购买充值金额活动
+    $(document).on("change",'.Card-rechargea-vip-c ul li input',function () {
+        var $rep =/^[0-9]*$/;
+        $(this).parent().attr("data-v","1")
+        var $val = $(this).val();
+        if($val != "" && $rep.test($val)){
+            $('.Card-rechargea-vip-c-activity').show();
+            $('.Card-rechargea-vip-c > ul li:last-child b').html("¥<span style='color:#e85c53;float:right;'>"+$val +"</span>")
+        }
+    })
+    $(document).on("click",".Card-rechargea-vip-c-input",function () {
+        var $dv = $(this).attr("data-v");
+        if($dv == "1"){
+            $(this).html("<input type='number' placeholder='请输入充值金额'>")
+            $(this).removeAttr("data-v")
+            $('.Card-rechargea-vip-c-activity').hide();
+            $(this).find("input").focus()
+
+        }else{
+            console.log("no")
+        }
+    })
+
+    $('.vip-pay-money label input').click(function () {
+        if ($(this).prop("checked") == false) {
+            $(this).prev("img").attr("src", "images/7.png")
+            $('.vip-pay-money ul li:last-child').hide()
+
+        } else {
+            $(this).prev("img").attr("src", "images/8.png")
+            $('.vip-pay-money ul li:last-child').show()
+        }
+
+    });
+    $('.vip-pay-money-main ul li p input').click(function () {
+        $('.vip-pay-money-main ul li p img').attr("src","images/7.png");
+        if ($(this).prop("checked") == false) {
+            $(this).prev("img").attr("src", "images/7.png")
+
+        } else {
+            $(this).prev("img").attr("src", "images/8.png")
+        }
+    })
+    $(document).on("change",'.vip-pay-money ul li b input',function () {
+        var $rep =/^[0-9]*$/;
+        $(this).parent().attr("data-v","1")
+        var $val = $(this).val();
+        if($val != "" && $rep.test($val)){
+            $(this).parent().html("¥"+$val)
+        }
+    })
+    $(document).on("click",'.vip-pay-money ul li b ',function () {
+        if($(this).attr("data-v") == 1){
+            $(this).html("<input type='number' placeholder='询问服务员后输入'/>")
+            $(this).find("input").focus()
+        }else{
+            console.log("no")
+        }
+    })
 })
+
 
 

@@ -482,7 +482,7 @@ input{outline: none;background: none}
 .shop-user-manager-add ul li:last-child{border-bottom: none;}
 .shop-user-manager-add button{ width:35%;height: 1.5rem;border: none;background: #e85c53; color: #ffffff;font-size: .7rem;margin: 2rem auto; display: block;}
 
-.shop-user-manager-add-psword{ width:100%; overflow: hidden;background: #f5f1ec; margin-top:.25rem; }
+.shop-user-manager-add-psword{ width:100%; overflow: hidden;background: #e9e5e1; margin-top:.25rem; }
 .shop-user-manager-add-psword p{font-size: .7rem;text-align: center;}
 .shop-user-manager-add-psword p:first-child{ margin-top:1.5rem; margin-bottom:.9rem;}
 .shop-user-manager-add-psword p input{ width:77.5%; height:2rem;border: 1px solid #e9e5e1;background: #fff;font-size: .7rem;text-align: center;}
@@ -627,3 +627,116 @@ input{outline: none;background: none}
 
 .gift-inverntory-adjustment-check-final ul li{background: #f5f1ec}
 .gift-inverntory-adjustment-check-final ul li:last-child{background: #fff;}
+
+.card-rechargea-change>p>b{width: 46%}
+.card-rechargea{ width:100%; overflow: hidden;}
+.card-rechargea>ul>li{ width:100%; overflow: hidden;background: #f5f1ec; height:1.6rem;font-size: .7rem; line-height:1.6rem;border-bottom: 1px solid #e9e5e1}
+.card-rechargea ul li span{ float: left; padding-left:4%;}
+.card-rechargea ul li b{ float: right; margin-right:.5rem; font-weight:300;}
+.card-rechargea-tab-main{ width:100%; overflow: hidden;background: #f5f1ec;}
+.card-rechargea-tab-main ul li{ height:1.6rem; width:98%;  margin-left:.5rem;float: right;font-size: .7rem;border-bottom: 1px solid #e9e5e1; line-height:1.6rem;overflow: hidden;}
+#main .card-rechargea-tab-main ul li span{padding-left:2%;}
+.card-rechargea-tab-main ul li:first-child a{ width:4.5rem; height:1.25rem; display: block;border: 1px solid #e85c53;border-radius: 5px; overflow: hidden; float: left; line-height:1.25rem; color: #e85c53; margin-left:1.4rem; margin-right:1.8rem; margin-top:.12rem;}
+.card-rechargea-tab-main ul li:first-child a img{ float: left; width:.85rem; margin-left:.85rem; margin-top:.18rem;}
+
+.card-rechargea-no-card{ width:100%; height:auto; overflow: hidden; height:6.9rem;background: #f5f1ec;border: 1px solid #ddd9d3; border-left:none; border-right:none;}
+.card-rechargea-no-card a{ width:35%; height:1.25rem;background: #e85c53;border-radius: 5px; color: #ffffff;font-size: .7rem;text-align: center; line-height:1.25rem; display: block;margin: 3rem auto;}
+
+.card-rechargea-no-card p{font-size: .7rem;text-align: center;}
+.card-rechargea-vip-nocard{ height:10rem;}
+.card-rechargea-vip-nocard p{background: #f5f1ec; margin-top:2rem;}
+
+.Card-rechargea-vip-c{ width:100%; height:auto; overflow: hidden; margin-top:.25rem;border: 1px solid #ddd9d3; border-left:none; border-right:none;border-bottom: none}
+.Card-rechargea-vip-c ul{background: #f5f1ec; overflow: hidden;}
+.Card-rechargea-vip-c ul li{ width:95%; padding-left:3%; float: right; height:1.675rem; line-height:1.675rem; overflow: hidden;font-size: .7rem;border-bottom: 1px solid #e9e5e1;}
+.Card-rechargea-vip-c ul li span{ float: left; color: #000;}
+.Card-rechargea-vip-c ul li b{ float: right; margin-right:.5rem; font-weight:300; height:100%;}
+.Card-rechargea-vip-c>ul li:last-child{background: #fff; width:100%;}
+.Card-rechargea-vip-c>ul li:last-child span{ padding-left:5%;}
+#main .Card-rechargea-vip-c ul li input{ width:100%;text-align: right; float: right; height:100%;font-size: .7rem;border: none;}
+.Card-rechargea-vip-c button{ width:35%; height:1.55rem; color: #ffffff;font-size: .7rem;background: #e85c53;border-radius: 5px; display: block;margin: 2rem auto;border: none;letter-spacing: .2rem;
+    padding-left: 2%;}
+.Card-rechargea-vip-c>ul li:nth-last-child(2){background: #e9e5e1; height:.25rem; width:100%;}
+.Card-rechargea-vip-c-activity{ display: none;}
+.Card-rechargea-vip-c-activity ul{background: none}
+.Card-rechargea-vip-c-activity ul li img{ width:.4rem; margin-top:.4rem; margin-left:.15rem; float: right;}
+.Card-rechargea-vip-c-activity ul li{ height:1.1rem!important;}
+.Card-rechargea-vip-c-activity ul li:nth-child(1){ margin-bottom:.4rem;}
+.Card-rechargea-vip-c-activity ul li:nth-child(3){ margin-bottom:.4rem;}
+.Card-rechargea-vip-c-activity ul li:nth-child(5){ margin-bottom:.4rem;}
+
+.Card-rechargea-vip-suc ul li:nth-last-child(2){ height:1.675rem;background: none; width:95%;}
+.Card-rechargea-vip-suc ul li:last-child{background: none; width:95%;}
+.Card-rechargea-vip-suc ul li:last-child span{ padding-left:0;}
+.Card-rechargea-vip-c-suc-info img{ width:2.9rem;margin: 1.2rem auto .5rem auto;}
+.Card-rechargea-vip-c-suc-info p{font-size: .7rem;text-align: center;}
+.Card-rechargea-vip-suc ul li b span{ float: right; color: #e85c53;}
+
+.vip-exchange-money{ width:100%; height:auto; overflow: hidden; margin-top:.25rem;}
+.vip-exchange-money ul{background: #f5f1ec; overflow: hidden;}
+.vip-exchange-money ul li:first-child,.vip-exchange-money ul li:nth-child(2){ width:100%; }
+.vip-exchange-money ul li:first-child span,.vip-exchange-money ul li:nth-child(2) span{ margin-left:5%;}
+.vip-exchange-money ul li:nth-child(2) {border-bottom: none}
+.vip-exchange-money ul li{height:1.7rem; line-height:1.7rem; overflow: hidden;font-size: .7rem;border-bottom: 1px solid #e9e5e1; width:95%; padding-left:3%; float: right;}
+.vip-exchange-money ul li b{ float: right; margin-right:.5rem; font-weight:300; height:100%; width:70%;text-align: right}
+.vip-exchange-money .border,.gift-exchange-money .border{ height:.25rem;background: #e9e5e1; width:100%;border-bottom: 1px solid #ddd9d3; border-top:1px solid #ddd9d3;}
+.vip-exchange-money ul li input{ height:100%;border: none; width:85%; float: right;text-align: right;font-size: .7rem}
+.vip-exchange-money ul li b span{ float: right;}
+.vip-exchange-money ul li:nth-child(6) input{ width:100%;}
+.vip-exchange-money ul li>span{ float: left;}
+.vip-exchange-money ul li b img{ float: right; width:.75rem; margin-top:.45rem; margin-left:.1rem;}
+#main .only-b b{ margin-right:1.35rem;}
+.vip-exchange-money button,.gift-exchange-money button{ width:47%; height:1.5rem;border: none;background: #e85c53;border-radius: 5px; color: #ffffff;font-size: .7rem; display: block;margin: 2rem auto;letter-spacing: .2rem; padding-left:2%;}
+.vip-exchange-money ul{ border-bottom:1px solid #ddd9d3;}
+.vip-exchange-money ul li:last-child{border-bottom: none}
+
+.gift-exchange-money{ width:100%; height:auto; overflow: hidden;border-top: 1px solid #ddd9d3;}
+.gift-exchange-money ul{background: #f5f1ec; overflow: hidden;border-bottom: 1px solid #ddd9d3;}
+.gift-exchange-money ul li{ height:1.7rem; line-height:1.7rem; overflow: hidden; width:95%; float: right; padding-left:3%;border-bottom: 1px solid #e9e5e1;font-size: .7rem}
+.gift-exchange-money ul li span:nth-child(2){ margin-left:.6rem;}
+.gift-exchange-money ul li:nth-child(2){border-bottom: none;}
+.gift-exchange-money ul li b{ float: right; margin-right:.5rem; font-weight:300;}
+.gift-exchange-money ul li:last-child{ border-bottom:none;}
+.gift-exchange-money ul li input{ float: right; height:100%; margin-right:.5rem;font-size: .7rem; width:71%;text-align: right;border: none;}
+
+.gift-exchange-money ul li b span{ color: #e85c53;}
+
+.pay-money .go-activities-change>p>b{ width:58%;}
+.pay-money-main ul li:nth-child(2){border-bottom: 1px solid #e9e5e1;}
+
+.vip-pay-money{ width:100%; height:auto; overflow: hidden;border-top: 1px solid #ddd9d3; margin-top:.25rem;}
+.vip-pay-money ul li{ width:100%; height:1.675rem;background: #fff;border-bottom: 1px solid #ddd9d3; line-height:1.675rem; position: relative; overflow: hidden;}
+.vip-pay-money ul li span{font-size: .7rem; margin-left:.5rem; float: left;}
+.vip-pay-money ul li b{ float: right; height:100%;margin-right:.5rem;font-size: .7rem; font-weight:300; width:57%;text-align: right}
+.vip-pay-money ul li b input{ width:100%; float: right;  height:100%;border: none;font-size: .7rem;text-align: right;}
+.vip-pay-money ul li label img{ float: left; width:.9rem; margin-top:.36rem; margin-left:.6rem;}
+.vip-pay-money ul li label input{ position: absolute; top:.36rem; left:.6rem; width:.75rem; height:.75rem; opacity:0;}
+.vip-pay-money ul li:nth-child(2){background: #e9e5e1;border-bottom: none;}
+.vip-pay-money button{ width:45%; height:1.5rem;border-radius: 5px;letter-spacing: .2rem; padding-left:2%; color: #ffffff;font-size: .7rem;border: none;background: #e85c53; display: block;margin: 3rem auto;}
+.vip-pay-money ul li:last-child{ display: none;border-top: 1px solid #ddd9d3;}
+.vip-pay-money-main{ width:100%; height:auto; overflow: hidden; margin-top:.25rem;}
+.vip-pay-money-main ul{background: #fff; overflow: hidden;}
+.vip-pay-money-main ul li{ width:95%; float: right; padding-left:3%;border-bottom: 1px solid #e9e5e1; overflow: hidden; position: relative; height:1.675rem; line-height:1.675rem;}
+.vip-pay-money-main ul li>span{ float: left;font-size: .7rem}
+.vip-pay-money-main ul li b{ float: right;font-size: .7rem; font-weight:300; margin-right:.5rem; }
+.vip-pay-money-main ul li:first-child,.vip-pay-money-main ul li:nth-child(3){ width:100%;background: #f5f1ec;border-bottom: none;}
+.vip-pay-money-main ul li:first-child span,.vip-pay-money-main ul li:nth-child(3) span{ margin-left:.5rem;}
+.vip-pay-money-main ul li:nth-child(2),.vip-pay-money-main ul li:nth-child(4){ width:100%;background: #e9e5e1;border-top: 1px solid #ddd9d3;}
+.vip-pay-money-main ul li:nth-child(2) h3 span,.vip-pay-money-main ul li:nth-child(4) h3 span{ border-left:3px solid #e85c53; padding: .1rem 0 .1rem .2rem; height:.7rem; margin-top:.3rem; margin-left:4%;}
+.vip-pay-money-main ul li:nth-child(5) img{ width:.5rem; float: right;}
+.vip-pay-money-main ul li:nth-child(5) a{ float: right; color: #7d7d7d;letter-spacing: .2rem}
+.vip-pay-money-main ul li:nth-child(5) img{ width:.4rem; margin-top:.4rem;}
+.vip-pay-money-main ul li p{ float: right;font-size: .7rem; width:83%;}
+.vip-pay-money-main ul li p>img{ float: right; margin-right:.5rem; width:.85rem; margin-top:.4rem;}
+.vip-pay-money-main ul li p input{ position: absolute; right:.5rem; top:.4rem; opacity:0;}
+.vip-pay-money-main ul li>input{ float: right; height:100%; width:58%;font-size: .7rem;text-align: right; margin-right:.5rem;border: none;}
+.vip-pay-money-main button{ width:47%; height:1.45rem;font-size: .7rem; color: #fff;border: none;background: #e85c53;border-radius: 5px; display: block;margin: 2rem auto;}
+.two-horse-bank{margin: .25rem 0}
+.two-horse-bank p{ width:37%;}
+.bank-voucher-add{ width:100%; height:auto; overflow: hidden;}
+.bank-voucher-add ul li{ width:100%; height:2.25rem; overflow: hidden;font-size:.7rem;background: #fff;border: 1px solid #ffffff; border-left:none; border-right:none;}
+.bank-voucher-add ul li span{ float: left; line-height:2.25rem; margin-left:5%;}
+.bank-voucher-add ul li button{ display: block;width:26%; height:1.55rem;letter-spacing:.2rem; padding-left:2%;font-size: .7rem;background: #e85c53;border-radius: 5px; color: #ffffff;border: none; float: right; margin-top:.35rem; margin-right:.5rem;}
+.bank-voucher-add ul li input{ height:100%; float: right; width:38%;border: none;font-size: .7rem;text-align: right; padding-right:2%;}
+.bank-voucher-add  p{text-align: center;font-size: .7rem; margin-top:10rem; margin-bottom:1rem;}
+.bank-voucher-add >a{ width:45%; height:1.5rem;border: none;background: #e85c53;border-radius: 5px;letter-spacing: .2rem; padding-left:2%; display: block; color: #ffffff;font-size: .7rem;text-align: center; line-height:1.5rem;margin-left: 26.5%}
