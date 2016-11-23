@@ -22,7 +22,9 @@
         <span>门店信息</span>
     </div>
     <div class="own-shop-search my-vip-search">
-        <p><img src="images/11.png" alt=""><input type="text" placeholder="输入会员手机号/卡号"></p>
+        <div class=" go-activities-change ">
+        <p><img src="images/11.png" alt=""><input type="text" placeholder="输入营业执照号/营业执照名称/店招名"></p>
+        </div>
         <div class="own-shop-place my-vip">
             <ul>
                 <li><span>南京市</span><img src="images/10.png" alt="">
@@ -123,7 +125,9 @@
 </div>
 <script>
     $(function () {
-
+    $('button').click(function () {
+        window.location.href="own-contorl.html"
+    })
 
     })
 </script>

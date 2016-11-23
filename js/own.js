@@ -110,8 +110,18 @@ $(function () {
     })
 
     // 发行会员卡页面js
-    $('.add ').click(function () {
-        var $li = "<li><input type='number' placeholder='请输入金额，例如：500'><input type='number' placeholder='请输入数值，例如：9'><img class='reduce' src='images/02.png' alt=''></li> "
+    $('.table-main-sale .add ').click(function () {
+        var $li = "<li><input type='number' placeholder='请输入金额，例如：500'><input type='number' placeholder='请输入折扣，例如：9'><img class='reduce' src='images/02.png' alt=''></li> "
+//        $('.hairpin-vip-table-main ul').prepend($($li))
+        $(this).parent().before($($li))
+    });
+    $('.table-main-gold .add ').click(function () {
+        var $li = "<li><input type='number' placeholder='请输入金额，例如：500'><input type='number' placeholder='请输入金额，例如：9'><img class='reduce' src='images/02.png' alt=''></li> "
+//        $('.hairpin-vip-table-main ul').prepend($($li))
+        $(this).parent().before($($li))
+    });
+    $('.table-main-store .add ').click(function () {
+        var $li = "<li><input type='number' placeholder='请输入金额，例如：500'><input type='number' placeholder='请输入积分，例如：9'><img class='reduce' src='images/02.png' alt=''></li> "
 //        $('.hairpin-vip-table-main ul').prepend($($li))
         $(this).parent().before($($li))
     });
@@ -193,7 +203,10 @@ $(function () {
         $('.card-rechargea-change>p>b').css("width","46%")
     });
     $('.pay-money p>b input').blur(function () {
-        $('.pay-money-change>p>b').css("width","57%")
+        $('.pay-money-change>p>b').css("width","49%")
+    });
+    $('.caozuorizhi p>b input').blur(function () {
+        $(' .go-activities-change>p>b').css("width","40%")
     });
 
     // 新增充值活动日期选择和活动范围选择
@@ -321,6 +334,24 @@ $(function () {
             console.log("no")
         }
     })
+    //银行券删除
+    $('.bank-voucher ul li b img').click(function () {
+       $(this).parent().parent().parent().parent().remove();
+    })
+    //会员买单结束支付详情下拉框
+    $(".open").click(function () {
+        if($(this).attr("data-show") == "true"){
+            $(this).removeAttr("data-show")
+            $('.vip-pay-money-suc-slide-down').slideUp();
+            $(this).find("img").removeClass("rotate")
+        }else{
+            $(this).attr("data-show","true")
+            $('.vip-pay-money-suc-slide-down').slideDown();
+            $(this).find("img").addClass("rotate")
+        }
+    })
+
+
 })
 
 

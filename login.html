@@ -29,8 +29,8 @@
             <form action="">
             <li><span>手机号:</span><input type="number" placeholder="请输入手机号"></li>
             <li><span>操作密码:</span><input type="password" placeholder="输入密码"></li>
-            <p><a href="###">首次登陆&gt;&gt;</a></p>
-            <button type="submit">登&nbsp;&nbsp;录</button>
+            <p><a href="first-login.html">首次登陆&gt;&gt;</a></p>
+            <button type="button">登&nbsp;&nbsp;录</button>
             </form>
         </ul>
     </div>
@@ -47,6 +47,9 @@
     </div>
 </div>
 <script>
+    $('button').click(function () {
+        window.location.href="index.html"
+    })
 </script>
 </body>
 </html>

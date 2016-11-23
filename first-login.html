@@ -28,13 +28,15 @@
             <li><span>手机号:</span><input type="number" placeholder="请输入手机号"></li>
             <li><span>手机验证码:</span><input type="number" placeholder="输入验证码"><input id="login-btn" onclick="settime(this)"value="发送验证码" type="button" /></li>
 
-            <button type="submit">下一步</button>
+            <button type="button">下一步</button>
             </form>
         </ul>
     </div>
 </div>
 <script>
-
+$('button').click(function () {
+    window.location.href="first-login-again.html"
+})
 </script>
 </body>
 </html>

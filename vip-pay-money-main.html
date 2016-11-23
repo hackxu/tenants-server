@@ -11,6 +11,7 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/rem.js"></script>
     <script src="js/own.js"></script>
+    <script src="js/Jquery.Query.js"></script>
     <style>
     </style>
 </head>
@@ -26,7 +27,7 @@
             <li><h3><span>该会员可以享受以下优惠：</span></h3></li>
             <li><span>会员尊享折扣9折</span><b>合计：¥1100</b></li>
             <li><h3><span>选择组合方式支付：</span></h3></li>
-            <li><span>银行现金券</span><b><img src="images/go.png" alt=""><a href="###">验券</a></b></li>
+            <li><span>银行现金券</span><b class="vip-change"><img src="images/go.png" alt=""><a href="bank-voucher-add.html?one=2">验券</a></b></li>
             <li><span>会员卡抵用券：(一次限用一张)</span></li>
             <li><p><img src="images/7.png" alt=""><input type="radio" name="quan"><span>满500减50(仅限该门店使用)</span></p></li>
             <li><p><img src="images/7.png" alt=""><input type="radio" name="quan"><span>满50减5(各门店使用)</span></p></li>
@@ -39,5 +40,15 @@
          <button type="button">确认支付</button>
     </div>
 </div>
+<script>
+    var $val = $.query.get("bank")
+    if($val == 1){
+        $('.vip-change').find("a").remove();
+        $('.vip-change').append("<span>¥200</span>")
+    }
+    $("button").click(function () {
+        window.location.href="vip-pay-money-final.html"
+    })
+</script>
 </body>
 </html>

@@ -11,6 +11,7 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/rem.js"></script>
     <script src="js/own.js"></script>
+    <script src="js/Jquery.Query.js"></script>
     <style>
     </style>
 </head>
@@ -25,11 +26,39 @@
     </div>
     <div class="bank-voucher-add">
         <ul>
-            <li><span>输入券码：</span><button type="button">验券</button><input type="number" placeholder="请输入券码"></li>
+            <li><span>输入券码：</span>
+                <button type="button">验券</button>
+                <input type="number" placeholder="请输入券码"></li>
         </ul>
         <p>支付完成后现金券不可退</p>
-        <a href="###">确定</a>
+        <a href="#">确定</a>
+    </div>
+    <div class="bg"></div>
+    <div class="login-alert own-contorl-alert">
+        <div class="own-contorl-alert-p">
+            <p>验券失败</p>
+            <p>手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认手机号不存在，请确认</p>
+        </div>
+        <div class="login-alet-check">
+            <span class="login-alet-check-canel">确&nbsp;&nbsp;认</span>
+        </div>
+
     </div>
 </div>
+<script>
+    var $val = $.query.get("one");
+    $('button').click(function () {
+        window.location.href = "bank-voucher.html?one="+$val
+    })
+    $('a').click(function () {
+
+
+        if ($val = 1) {
+            window.location.href = "no-vip-pay-money-main.html?bank=1"
+        } else {
+            window.location.href = "no-vip-pay-money-main.html?bank=1"
+        }
+    })
+</script>
 </body>
 </html>

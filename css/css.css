@@ -2,7 +2,8 @@
 img{ display: block;border: none}
 ul{ list-style-type:none;}
 body{font-family: "Microsoft YaHei";background: #e9e5e1}
-a{text-decoration: none;}
+a{text-decoration: none; color: #000;}
+h3{ font-weight:300;}
 input{outline: none;background: none}
 ::-webkit-input-placeholder { /* WebKit browsers */ color:#7d7d7d; }
 　　:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#7d7d7d; }
@@ -38,7 +39,7 @@ input{outline: none;background: none}
 
 .bg{ width:100%;  overflow: hidden;background: rgba(0,0,0,0.3); position: fixed; top:0; left:0; height:100%; z-index:1; display: none;}
 .login-alert{ width:82%;background: #fff; height:auto; overflow: hidden; position: fixed; top:50%; left:50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index:4; display: none;}
-.login-alert p{text-align: center;font-size: .7rem;padding: 2rem 0}
+.login-alert p{text-align: center;font-size: .7rem;padding: 2rem 0; line-height:.9rem;}
 .login-alert .login-alet-check{ width:91%; height:auto; overflow: hidden;margin: 0 auto; border-top:1px solid #ddd9d3;}
 .login-alert .login-alet-check span{ display: block; float: left; width:49%; height:1.5rem;margin: .25rem 0;font-size: .7rem;text-align: center; line-height:1.5rem;}
 .login-alert .login-alet-check span:last-child{ border-left:1px solid #ddd9d3; color: #ef3e4e;}
@@ -132,7 +133,7 @@ input{outline: none;background: none}
 .hairpin-check ul li:last-child input{width: 29%; height:1rem; float: left;font-size: .5rem; margin-top:.4rem;background: #e9e5e1;border: none}
 .hairpin-check ul li:last-child input:nth-child(3){ position: absolute; top:0; left:2.8rem; opacity:0;}
 .hairpin-check ul li:last-child input:last-child{ position: absolute; top:0rem; left:5.9rem; opacity:0;}
-.hairpin-classify-list{ width:100%; height:auto; overflow: hidden; border-top:1px solid #ddd9d3;border-bottom: 1px solid #ddd9d3;background: #fff;margin-top: .25rem}
+.hairpin-classify-list{ width:100%; height:auto; overflow: hidden; border-top:1px solid #ddd9d3;border-bottom: 1px solid #ddd9d3;background: #f5f1ec;margin-top: .25rem}
 .hairpin-classify-list ul li{ width:98%; ; overflow: hidden;font-size:.5rem; color: #464646; line-height:.8rem; float: right;}
 .hairpin-classify-list ul li span{ float: left; margin-left:.3rem;}
 .hairpin-classify-list ul li b{ float: right; margin-right:.4rem; font-weight:300;}
@@ -143,7 +144,7 @@ input{outline: none;background: none}
 
 .hairpin-tab-main>ul{ display: none;}
 .hairpin-gift{ width:100%; height:auto; overflow: hidden;border-top: 1px solid #ddd9d3;}
-.hairpin-gift ul li{ width:100%; height:1.75rem;border-bottom: 1px solid #e9e5e1; overflow: hidden; line-height:1.75rem;background: #fff;font-size: .7rem}
+.hairpin-gift ul li{ width:100%; height:1.75rem;border-bottom: 1px solid #e9e5e1; overflow: hidden; line-height:1.75rem;background: #f5f1ec;font-size: .7rem}
 .hairpin-gift ul li span{ margin-left:.5rem; float: left;}
 .hairpin-gift ul li label{ width:25%; display: block; overflow: hidden; float: left; position: relative; margin-left:.5rem;}
 .hairpin-gift ul li>input{ float: right; width:3rem; height:98%;font-size: .7rem; border: none;text-align: right; margin-right:.1rem;}
@@ -168,12 +169,12 @@ input{outline: none;background: none}
 .hairpin-gift-change-alert p:nth-child(3){ margin-bottom:2.5rem;}
 
 .hairpin-gift-main{ width:100%; height:auto; overflow: hidden;border-top: 1px solid #ddd9d3;}
-.hairpin-gift-main ul li{ width:100%;background: #fff;  border-bottom:1px solid #e9e5e1; overflow: hidden; height:1.75rem;}
+.hairpin-gift-main ul li{ width:100%;background: #f5f1ec;  border-bottom:1px solid #e9e5e1; overflow: hidden; height:1.75rem;}
 .hairpin-gift-main ul li span{font-size: .7rem; float: left; line-height:1.75rem; margin-left:1.5rem;}
 .hairpin-gift-main ul li h3{ border-left:3px solid #e85c53; padding-left:.1rem; height:.9rem;font-size: .7rem; font-weight:300; display: block; line-height:.9rem; margin-top:.45rem; margin-left:.5rem; float: left;}
 .hairpin-gift-main ul li b{ float: right; margin-right:.5rem;font-size: .7rem; line-height:1.75rem; font-weight:300;}
 
-.hairpin-gift-suc{ width:100%; height:13rem;background: #fff; position: relative; display: none;}
+.hairpin-gift-suc{ width:100%; height:13rem;background: #f5f1ec; position: relative; display: none;}
 .hairpin-gift-suc p{ width:84%;font-size: .7rem; line-height:.9rem; position: absolute; top:50%; left:50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .own-contorl-alert .login-alet-check span { float: none; }
@@ -247,7 +248,7 @@ input{outline: none;background: none}
 
 
 .activities-main{ width:100%; height:auto; overflow: hidden; margin-bottom:1rem;}
-.activities-list{ width:100%; height:auto; overflow: hidden;border:1px solid #ddd9d3; border-left:none; border-right:none; background: #fff; margin-bottom:.2rem;}
+.activities-list{ width:100%; height:auto; overflow: hidden;border:1px solid #ddd9d3; border-left:none; border-right:none; background: #f5f1ec; margin-bottom:.2rem;}
 .activities-list ul li:first-child p{font-size: .7rem; color: #000; float: left; width:56%; height:auto; margin-top:.3rem;}
 .activities-list ul li{font-size: .5rem; color: #464646; overflow: hidden; width:95%;margin: 0 auto;}
 .activities-list-right{  float: right; width:43%; overflow: hidden;margin-top:.3rem;}
@@ -300,7 +301,7 @@ input{outline: none;background: none}
 .my-vip-search-change >p >b{ width:60%; display: block;margin: 0 auto; height:1.37rem;}
 .my-vip-search-change >p >b >img{ width:.7rem;}
 
-.my-vip-main{ width:100%; height:auto; overflow: hidden; border-top:1px solid #ddd9d3; margin-bottom:2rem;}
+.my-vip-main{ width:100%; height:auto; overflow: hidden; border-top:1px solid #ddd9d3; margin-bottom:2rem;background: #f5f1ec}
 .my-vip-main >ul>li{ height:1.7rem; width:94%;padding: 0 3%; line-height:1.7rem;font-size: .7rem;border-bottom: 1px solid #e9e5e1;}
 .my-vip-main>ul>li span{ float: left;}
 .my-vip-main>ul>li b{ float: left; margin-left: 2rem;font-weight: 300;}
@@ -431,7 +432,7 @@ input{outline: none;background: none}
 
 .sale-activities-add ul li:last-child b input{ width:3rem; float: none;text-align: center; margin: 0 .2rem;}
 
-.sale-activities-add ul li:last-child b{ margin-right:.5rem;}
+.sale-activities-add ul li:last-child b{ margin-right:.5rem; color: #000;}
 
 .sale-activities-change ul li b{ color: #000;}
 
@@ -583,10 +584,10 @@ input{outline: none;background: none}
 .gift-exchange-list-c>ul>li:first-child label img{ width:.75rem; float: left; margin-top:.35rem; margin-right:.2rem;}
 .gift-exchange-list-c>ul>li:first-child label input{ width:.75rem; height:.75rem; position: absolute;top: .35rem; left:0; opacity:0;}
 .gift-exchange-list-c>ul>li{ width:97%; float: right; overflow: hidden;  line-height:1rem;}
-.gift-exchange-list-c>ul>li b{ float: right; overflow: hidden; font-weight:300; margin-right:.5rem;}
+.gift-exchange-list-c>ul>li b{ float: right; overflow: hidden; font-weight:300; margin-right:.5rem;font-size: .5rem}
 .gift-exchange-list-c>ul>li:first-child img{ float: right; width:.85rem; margin-top:.3rem;}
 .gift-exchange-list-c>ul>li:first-child span{ float: right;font-size: .7rem;margin: 0 .15rem}
-.gift-exchange-list-c>ul>li:last-child { color: #464646;}
+.gift-exchange-list-c>ul>li:last-child { color: #464646;font-size: .5rem}
 .gift-exchange-list-c>ul>li:nth-child(2){font-size: .7rem; margin-top:.1rem;}
 .gift-red{ color: #e85c53;}
 .gift-exchange-list-c-slide-down{ top:13.7rem;}
@@ -701,7 +702,7 @@ input{outline: none;background: none}
 
 .gift-exchange-money ul li b span{ color: #e85c53;}
 
-.pay-money .go-activities-change>p>b{ width:58%;}
+.pay-money .go-activities-change>p>b{ width:49%;}
 .pay-money-main ul li:nth-child(2){border-bottom: 1px solid #e9e5e1;}
 
 .vip-pay-money{ width:100%; height:auto; overflow: hidden;border-top: 1px solid #ddd9d3; margin-top:.25rem;}
@@ -726,6 +727,7 @@ input{outline: none;background: none}
 .vip-pay-money-main ul li:nth-child(5) img{ width:.5rem; float: right;}
 .vip-pay-money-main ul li:nth-child(5) a{ float: right; color: #7d7d7d;letter-spacing: .2rem}
 .vip-pay-money-main ul li:nth-child(5) img{ width:.4rem; margin-top:.4rem;}
+.vip-pay-money-main ul li:nth-child(5) b span{ margin-right:.2rem;}
 .vip-pay-money-main ul li p{ float: right;font-size: .7rem; width:83%;}
 .vip-pay-money-main ul li p>img{ float: right; margin-right:.5rem; width:.85rem; margin-top:.4rem;}
 .vip-pay-money-main ul li p input{ position: absolute; right:.5rem; top:.4rem; opacity:0;}
@@ -739,4 +741,79 @@ input{outline: none;background: none}
 .bank-voucher-add ul li button{ display: block;width:26%; height:1.55rem;letter-spacing:.2rem; padding-left:2%;font-size: .7rem;background: #e85c53;border-radius: 5px; color: #ffffff;border: none; float: right; margin-top:.35rem; margin-right:.5rem;}
 .bank-voucher-add ul li input{ height:100%; float: right; width:38%;border: none;font-size: .7rem;text-align: right; padding-right:2%;}
 .bank-voucher-add  p{text-align: center;font-size: .7rem; margin-top:10rem; margin-bottom:1rem;}
-.bank-voucher-add >a{ width:45%; height:1.5rem;border: none;background: #e85c53;border-radius: 5px;letter-spacing: .2rem; padding-left:2%; display: block; color: #ffffff;font-size: .7rem;text-align: center; line-height:1.5rem;margin-left: 26.5%}
+.bank-voucher-add >a,.bank-voucher>a{ width:45%; height:1.5rem;border: none;background: #e85c53;border-radius: 5px;letter-spacing: .2rem; padding-left:2%; display: block; color: #ffffff;font-size: .7rem;text-align: center; line-height:1.5rem;margin-left: 26.5%}
+
+.bank-voucher{ width:100%; height:auto; overflow: hidden;border-top: 1px solid #ddd9d3;}
+.bank-voucher-list{ margin-top:.25rem;background: #f5f1ec; overflow: hidden;border-bottom: 1px solid #ddd9d3;border-top: 1px solid #ddd9d3;}
+.bank-voucher-list ul li:last-child{border-bottom: none}
+/*.bank-voucher ul{background: #f5f1ec; overflow: hidden;}*/
+.bank-voucher ul li{ width:95%; padding-left:3%; float: right;border-bottom: 1px solid #e9e5e1; line-height:2.25rem; overflow: hidden;}
+.bank-voucher ul li span{ float: left;font-size: .7rem}
+.bank-voucher ul li b{ float: right;font-size: .7rem; margin-right:.5rem; font-weight:300;}
+.bank-voucher ul li b>img{ width:.9rem; margin-top:.7rem;}
+.bank-voucher>ul>li:last-child{background: #e9e5e1; width:100%; padding-left:0;}
+.bank-voucher>ul>li:last-child p{text-align: center; overflow: hidden;margin: 1rem auto; width:36%;}
+.bank-voucher>ul>li:last-child img{ float: left; width:.75rem;margin-top:.7rem; margin-right:.3rem;}
+.bank-voucher>ul>li:last-child span{ float: left; }
+.bank-voucher>p{font-size: .7rem;text-align: center;margin: 2rem auto 1rem auto;}
+
+
+.vip-pay-money-final{ width:100%; overflow: hidden; height:auto; margin-top:.25rem;border-top: 1px solid #ddd9d3}
+.vip-pay-money-final ul{background: #f5f1ec; overflow: hidden;}
+.vip-pay-money-final ul li{ line-height:2.25rem;border-bottom: 1px solid #ddd9d3; width:100%; overflow: hidden;}
+.vip-pay-money-final ul li span{ float: left; margin-left:5%;font-size: .7rem}
+.vip-pay-money-final ul li b{ float: right;font-size: .7rem; margin-right:.5rem; font-weight:300;}
+.vip-pay-money-final ul li:nth-child(2){background: #e9e5e1; height:2rem;}
+.vip-pay-money-final ul li:nth-child(2) h3{ font-weight:300; overflow: hidden; height:100%;}
+.vip-pay-money-final ul li:nth-child(2) span{border-left: 3px solid #e85c53; height:1rem; padding-left:.2rem; line-height:1rem; margin-top:.5rem;}
+.vip-pay-money-final>a{ width:47%; height:1.5rem; display: block;background: #e85c53; color: #ffffff;text-align: center; line-height:1.5rem;border-radius: 5px;font-size: .7rem;margin: .4rem auto;border: 1px solid #e85c53;}
+.vip-pay-money-final>a:nth-last-child(2){ margin-top:3rem;}
+.vip-pay-money-final>a:last-child{background: #e9e5e1;border: 1px solid #7d7d7d; color: #7d7d7d;}
+
+.vip-pay-money-suc{ width:100%; height:auto; overflow: hidden;}
+.vip-pay-money-suc>img{ width:18.75%;margin:.9rem auto; }
+.vip-pay-money-suc>ul>li{ line-height:1.5rem; overflow: hidden; width:100%;}
+.vip-pay-money-suc>ul>li>h3{ float: left; margin-left:5%; font-weight:300;}
+.vip-pay-money-suc>ul>li>b{ float: right; margin-right:.5rem; font-weight:300;font-size: .7rem}
+.vip-pay-money-suc b{ font-weight:300;}
+.vip-pay-money-suc>ul>li>h3 span{ height:1rem; border-left:3px solid #e85c53; line-height:1rem;font-size: .7rem; margin-top:.5rem; padding-left:.3rem;}
+.open img{ float: right; width:.8rem; margin-top:.6rem; margin-left:.3rem;}
+.vip-pay-money-suc-slide-down{ display: none;}
+.vip-pay-money-suc>ul>li>span{ float: left; margin-left:7%;font-size: .7rem;}
+.vip-pay-money-suc>a{ width:43%; height:1.6rem; display: block; overflow: hidden;text-align: center; line-height:1.6rem;border-radius: 5px;font-size: .7rem; color: #ffffff;background: #e85c53;letter-spacing: .5rem; padding-left:4%;margin: 2rem auto;}
+.vip-pay-money-suc-slide-down{ width:100%; height:auto; overflow: hidden;background: #f5f1ec;border-top: 1px solid #ddd9d3;border-bottom: 1px solid #ddd9d3;}
+.vip-pay-money-suc-slide-down ul li{ height:2.25rem; line-height:2.25rem;font-size: .7rem;border-bottom: 1px solid #e9e5e1;}
+.vip-pay-money-suc-slide-down ul li>span{ float: left; margin-left:5%;}
+.vip-pay-money-suc-slide-down ul li b{ float: right; margin-right:.5rem;}
+.vip-pay-money-suc-slide-down ul li:last-child{border-bottom: none;}
+.vip-pay-money-suc-slide-down ul li >p span{ margin-left:15%;}
+.rotate{ -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);}
+.reo{transition: all .5s}
+.no-vip-pay-money{ margin-top:0;}
+
+.no-vip-money-main ul li:nth-child(2),.no-vip-money-main ul li:nth-child(3){ display: none;}
+
+.bug-one{ margin-top:.25rem;}
+.gift-bug-one p{ line-height:.8rem;}
+.hairpin-gift-change-alert{background: #f5f1ec}
+.shop-user-manager-change-pasword{ display: block;}
+.shop-user-manager-change-pasword p{padding: .3rem 1rem;text-align: left}
+.shop-user-manager-change-pasword>p:first-child{ padding-top:1rem;}
+
+.caozuorizhi .go-activities-change>p>b{ width:40%;}
+.caozuorizhi ul{ width:58%;}
+.caozuorizhi ul li{ width:40%!important;}
+.caozuorizhi ul li img{ width:20%!important;}
+.caozuorizhi ul li span{ width:79%!important;}
+.caozuoleixing-slide-down{ position: absolute; top:5.4rem; left:0;}
+.caozuorizhi-main .activities-list-right-top span:first-child{ color: #000;}
+.caozuorizhi-xiangqing{ width:100%; height:auto; overflow: hidden;border-top: 1px solid #ddd9d3; margin-top:.25rem;}
+.caozuorizhi-xiangqing ul li{ width:100%; height:auto; overflow: hidden;background: #f5f1ec; height:1.7rem; line-height:1.7rem;font-size: .7rem;border-bottom: 1px solid #e9e5e1; overflow: hidden;}
+.caozuorizhi-xiangqing ul li span{ margin-left:5%; float: left;}
+
+.caozuorizhi-xiangqing ul li b{ margin-right:.5rem; float: right; font-weight:300;}
+
+.pay-money-change p>b>input{ width:70%;}
+.my-vip-two{background: none}
+.setting-coupon ul li input{font-size: .7rem}
+.setting-coupon ul li:last-child{border-bottom: none}

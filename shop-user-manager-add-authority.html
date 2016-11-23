@@ -11,6 +11,7 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/rem.js"></script>
     <script src="js/own.js"></script>
+    <script src="js/Jquery.Query.js"></script>
     <style>
      </style>
 </head>
@@ -18,11 +19,11 @@
 <div id="main">
     <div class="status-bar">
         <a href="###"><img src="images/b.png" alt=""></a>
-        <span>新增门店操作员</span>
+        <span>权限详情</span>
     </div>
     <div class="authority-main">
         <div class="authority-main-list shop-user-manager-add-authority">
-            <h3><span>默认开通以下权限</span></h3>
+            <h3><span>默认权限</span></h3>
             <ul>
                 <li>查看所有会员信息</li>
                 <li>查看在集团范围开展的会员卡/礼品卡活动</li>
@@ -32,21 +33,27 @@
 
         </div>
         <div class="authority-main-list shop-user-manager-add-authority">
-            <h3><span>选择开通权限</span></h3>
+            <h3><span>开通权限</span></h3>
             <ul>
-                <li><span>门店信息确认和申请发布</span><b><img src="images/7.png" alt=""><input type="checkbox"></b></li>
-                <li><span>发起尽在本店范围开展的会员卡/礼品卡活动</span><b><img src="images/7.png" alt=""><input type="checkbox"></b></li>
-                <li><span>本门店礼品库存调整</span><b><img src="images/7.png" alt=""><input type="checkbox"></b></li>
-                <li><span>会员卡/礼品卡充值</span><b><img src="images/7.png" alt=""><input type="checkbox"></b></li>
-                <li><span>会员卡/礼品卡调账</span><b><img src="images/7.png" alt=""><input type="checkbox"></b></li>
-                <li><span>受理买单交易</span><b><img src="images/7.png" alt=""><input type="checkbox"></b></li>
+                <li><span>门店信息确认和申请发布</span></li>
+                <li><span>发起尽在本店范围开展的会员卡/礼品卡活动</span></li>
+                <li><span>本门店礼品库存调整</span></li>
+                <li><span>会员卡/礼品卡充值</span></li>
+                <li><span>会员卡/礼品卡调账</span></li>
+                <li><span>受理买单交易</span></li>
             </ul>
-            <div class="shop-user-manager-add-authority-button">
-                <button type="button">确认新增</button>
-            </div>
+            <!--<div class="shop-user-manager-add-authority-button">-->
+                <!--<button type="button">确认新增</button>-->
+            <!--</div>-->
         </div>
     </div>
 
 </div>
+<script>
+    $("button").click(function () {
+        window.location.href="shop-user-manager-add-psword.html"
+    })
+
+</script>
 </body>
 </html>

@@ -22,7 +22,7 @@
     </div>
     <div class="goactivities-main-add go-activities-gift-add shop-user-manager-add shop-user-manager">
         <ul>
-            <li><a href="###"><img src="images/redadd.png" alt=""><span>新增门店操作员</span></a></li>
+            <li><a href="shop-user-manager-add.html"><img src="images/redadd.png" alt=""><span>新增门店操作员</span></a></li>
         </ul>
     </div>
     <div class="own-shop-search my-vip-search go-activities-change-border">
@@ -49,7 +49,7 @@
             <ul>
                 <li><p>手机号：18251886363</p><div class="activities-list-right"><div class="activities-list-right-top"><span>姓名：周一请</span></div></div></li>
                 <li><span>所属门店：华仔三山街店</span><b>状态:在用</b></li>
-                <li><a href="###" class="shop-user-manager-change">修&nbsp;改</a><a href="###" class="shop-user-manager-remove">删&nbsp;除</a><a href="###" class="shop-user-manager-disable">禁&nbsp;用</a><a href="###" class="shop-user-manager-reset">重置密码</a><a href="###" class="shop-user-manager-authority">权限详情</a></li>
+                <li><a href="shop-user-manager-add-authority-change.html" class="shop-user-manager-change">修&nbsp;改</a><a href="###" class="shop-user-manager-remove">删&nbsp;除</a><a href="###" class="shop-user-manager-disable">禁&nbsp;用</a><a href="###" class="shop-user-manager-reset">重置密码</a><a href="shop-user-manager-add-authority.html" class="shop-user-manager-authority">权限详情</a></li>
             </ul>
         </div>
         <div class="activities-list ">
@@ -110,7 +110,7 @@
 </body>
 <script>
     $(function () {
-        $(document).on('.shop-user-manager-disable',"click",function () {
+        $(document).on("click",'.shop-user-manager-disable',function () {
             $('.bg').show();
             $('.bg').css("z-index","3")  //调整背景层层级
             $('.shop-user-manager-alert-disale').show();
